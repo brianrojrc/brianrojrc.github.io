@@ -31,4 +31,3 @@ exclude:
   - README.md
   - vendor/
 
-  theme: minima
