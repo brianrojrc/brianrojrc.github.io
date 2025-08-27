@@ -30,3 +30,5 @@ exclude:
   - Gemfile.lock
   - README.md
   - vendor/
+
+  theme: minima
