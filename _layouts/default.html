@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+    <div class="math-background">
+        <div class="math-symbol">∫</div>
+        <div class="math-symbol">σ²</div>
+        <div class="math-symbol">π</div>
+        <div class="math-symbol">∇</div>
+        <div class="math-symbol">∞</div>
+        <div class="math-symbol">∂f/∂x</div>
+        <div class="math-symbol">λ</div>
+        <div class="math-symbol">dW</div>
+    </div>
+
+    {% include header.html %}
+
+    <main class="container">
+        {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>
