@@ -7,7 +7,7 @@ title: Home
     <h1>Hi, I'm Brian Rojas</h1>
     <p class="subtitle">Computer Engineering & Mathematics @ UCF</p>
     <p class="description">
-        I blend mathematics, machine learning, and systems programming 
+        I use mathematics, machine learning, and systems programming 
         to solve problems in financial markets and security research.
     </p>
     <div class="cta-buttons">
