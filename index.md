@@ -15,7 +15,7 @@ title: Home
             View Projects
         </a>
         <a href="{{ '/contact' | relative_url }}" class="btn btn-secondary">
-            Get in Touch
+            Get in Touch with me
         </a>
     </div>
 </section>
