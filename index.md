@@ -5,7 +5,7 @@ title: Home
 
 <section class="hero">
     <h1>Hi, I'm Brian Rojas</h1>
-    <p class="subtitle">Computer Engineering & Mathematics Undergrad</p>
+    <p class="subtitle">Computer Engineering & Mathematics</p>
     <p class="description">
         I use mathematics, machine learning, and systems programming 
         to solve problems in financial markets and security research.
