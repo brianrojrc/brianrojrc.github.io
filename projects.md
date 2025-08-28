@@ -19,7 +19,7 @@ title: Projects
         </div>
         <div class="card">
             <div class="card-icon">📊</div>
-            <h3>Volatility Forecasting Engine</h3>
+            <h3>Volatility Forecasting</h3>
             <p>Machine learning system for forecasting volatility surfaces and trading vol in options markets. Deep analysis of orderbook microstructure dynamics.</p>
         </div>
         <div class="card">
