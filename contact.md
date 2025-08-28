@@ -15,11 +15,11 @@ title: Contact
         <p style="font-size: 18px; color: var(--text-secondary); margin-bottom: 40px;">Whether you have a question, opportunity, or just want to say hello.</p>
         <div style="display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;">
             <a href="mailto:brianroj@pm.me" style="display: flex; align-items: center; gap: 12px; padding: 16px 24px; background: var(--bg); border: 1px solid var(--border); border-radius: 12px; text-decoration: none; color: var(--text-primary); font-weight: 500;">
-                <span>📧</span>
+                <span></span>
                 <span>Email</span>
             </a>
             <a href="https://www.linkedin.com/in/brian-rojas-9b0b5237a" target="_blank" style="display: flex; align-items: center; gap: 12px; padding: 16px 24px; background: var(--bg); border: 1px solid var(--border); border-radius: 12px; text-decoration: none; color: var(--text-primary); font-weight: 500;">
-                <span>💼</span>
+                <span></span>
                 <span>LinkedIn</span>
             </a>
         </div>
