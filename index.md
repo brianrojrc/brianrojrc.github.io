@@ -7,9 +7,8 @@ title: Home
     <h1>Hi, I'm Brian Rojas</h1>
     <p class="subtitle">Computer Engineering & Mathematics @ UCF</p>
     <p class="description">
-        I blend engineering mathematics, machine learning, and systems programming 
-        to solve problems in financial markets and security research. Currently finding 
-        PAC bypasses for iOS jailbreak development and building volatility forecasting systems.
+        I blend mathematics, machine learning, and systems programming 
+        to solve problems in financial markets and security research.
     </p>
     <div class="cta-buttons">
         <a href="{{ '/projects' | relative_url }}" class="btn btn-primary">
@@ -24,7 +23,7 @@ title: Home
 <section class="fade-in">
     <h2>What I Do</h2>
     <p class="section-description">
-        Passionate about solving complex problems through code, mathematics, and innovative thinking.
+        Passionate about solving complex problems through code, mathematics
     </p>
     <div class="grid">
         <div class="card">
