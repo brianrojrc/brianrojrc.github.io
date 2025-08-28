@@ -15,7 +15,7 @@ title: Home
             View Projects
         </a>
         <a href="{{ '/contact' | relative_url }}" class="btn btn-secondary">
-            Get in Touch
+            Get in Touch with me
         </a>
     </div>
 </section>
@@ -23,7 +23,7 @@ title: Home
 <section class="fade-in">
     <h2>What I Do</h2>
     <p class="section-description">
-        Interests
+        My current porjects and works.
     </p>
     <div class="grid">
         <div class="card">
