@@ -12,20 +12,13 @@ title: Blog
 
 <section class="fade-in">
     <div class="grid">
-        <div class="card">
-            <h3>Understanding Orderbook Microstructure</h3>
-            <p>Deep dive into market microstructure dynamics, order flow analysis, and how to extract alpha from high-frequency market data patterns.</p>
-            <small style="color: var(--text-tertiary);">March 2025</small>
-        </div>
-        <div class="card">
-            <h3>PAC Bypass Techniques in iOS</h3>
-            <p>Exploring modern iOS security mechanisms and developing novel approaches to bypass Pointer Authentication Codes for jailbreak development.</p>
-            <small style="color: var(--text-tertiary);">October 2024</small>
-        </div>
-        <div class="card">
-            <h3>Volatility Trading Strategies</h3>
-            <p>How I approach volatility forecasting using machine learning models and mathematical insights from stochastic processes.</p>
-            <small style="color: var(--text-tertiary);">June 2025</small>
-        </div>
+        {% for post in site.posts %}
+        <article class="card">
+            <div class="timeline-date">{{ post.date | date: "%B %Y" }}</div>
+            <h3><a href="{{ post.url | relative_url }}" style="text-decoration: none; color: var(--text-primary);">{{ post.title }}</a></h3>
+            <p>{{ post.excerpt }}</p>
+            <a href="{{ post.url | relative_url }}" style="color: var(--accent); text-decoration: none; font-weight: 500; margin-top: 12px; display: inline-block;">Read more →</a>
+        </article>
+        {% endfor %}
     </div>
 </section>
