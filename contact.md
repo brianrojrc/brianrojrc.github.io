@@ -8,7 +8,6 @@ title: Contact
     <p class="description">
         Need help? Contact me! I'll be happy to assist.
     </p>
-</section>
 
 <section class="fade-in">
     <div style="background: var(--bg-secondary); border-radius: 24px; padding: 80px 40px; text-align: center; margin: 80px 0;">
