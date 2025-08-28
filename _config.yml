@@ -8,6 +8,7 @@ url: "https://brianrojrc.github.io"
 
 markdown: kramdown
 highlighter: rouge
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -30,6 +31,3 @@ exclude:
   - Gemfile.lock
   - README.md
   - vendor/
-
-# Theme
-theme: minima

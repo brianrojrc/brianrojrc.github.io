@@ -15,17 +15,17 @@ title: Blog
         <div class="card">
             <h3>Understanding Orderbook Microstructure</h3>
             <p>Deep dive into market microstructure dynamics, order flow analysis, and how to extract alpha from high-frequency market data patterns.</p>
-            <small style="color: var(--text-tertiary);">January 2025</small>
+            <small style="color: var(--text-tertiary);">March 2025</small>
         </div>
         <div class="card">
             <h3>PAC Bypass Techniques in iOS</h3>
             <p>Exploring modern iOS security mechanisms and developing novel approaches to bypass Pointer Authentication Codes for jailbreak development.</p>
-            <small style="color: var(--text-tertiary);">December 2024</small>
+            <small style="color: var(--text-tertiary);">October 2024</small>
         </div>
         <div class="card">
             <h3>Volatility Trading Strategies</h3>
             <p>How I approach volatility forecasting using machine learning models and mathematical insights from stochastic processes.</p>
-            <small style="color: var(--text-tertiary);">November 2024</small>
+            <small style="color: var(--text-tertiary);">June 2025</small>
         </div>
     </div>
 </section>
