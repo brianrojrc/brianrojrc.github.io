@@ -6,7 +6,7 @@ title: Contact
 <section class="hero">
     <h1>Get In Touch</h1>
     <p class="description">
-        Need help?.
+        Need help? Contact me! I'll be happy to assist.
     </p>
 </section>
 
