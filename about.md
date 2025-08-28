@@ -23,11 +23,11 @@ title: About
         </div>
         <div class="card">
             <h3>Age 13 - First App</h3>
-            <p>Built my first iOS game in Objective-C featuring Nickelodeon's Blue Puppy - a rocket adventure game.</p>
+            <p>Built my first iOS game in Objective-C featuring Nickelodeon's Blue Puppy, a rocket adventure game.</p>
         </div>
         <div class="card">
             <h3>College Years - The Pivot</h3>
-            <p>Started in Finance but switched to Engineering for more mathematical rigor, guided by mentors from Ambrus Group and Jane Street.</p>
+            <p>Started in Finance but switched to Engineering for more mathematical rigor.</p>
         </div>
         <div class="card">
             <h3>Present - Current Focus</h3>
