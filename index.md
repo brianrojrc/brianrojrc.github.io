@@ -23,7 +23,7 @@ title: Home
 <section class="fade-in">
     <h2>What I Do</h2>
     <p class="section-description">
-        Passionate about solving complex problems through code, mathematics
+        Interests
     </p>
     <div class="grid">
         <div class="card">
