@@ -29,7 +29,7 @@ title: About
         </div>
         <div class="card">
             <h3>Present - Current Focus</h3>
-            <p>Double majoring in Computer Engineering and Mathematics at UCF. Working on PAC bypass techniques for iOS jailbreaks and building volatility forecasting systems using ML. Primary languages: C/C++, Python, and Rust.</p>
+            <p>Majoring in Computer Engineering and Mathematics at UCF. Working on PAC bypass techniques for iOS jailbreaks and building volatility forecasting systems using ML. Primary languages: C/C++, Python, and Rust.</p>
         </div>
     </div>
 </section>
