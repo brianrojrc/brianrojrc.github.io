@@ -23,7 +23,7 @@ title: Home
 <section class="fade-in">
     <h2>What I Do</h2>
     <p class="section-description">
-        My current porjects and works.
+        Curious on what I do? Here's my favorite things to learn and research about.
     </p>
     <div class="grid">
         <div class="card">
