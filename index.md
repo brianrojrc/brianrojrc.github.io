@@ -9,8 +9,8 @@ title: Home
             <h1>Brian Rojas</h1>
             <p class="tagline">Electrical Engineering & CS + Mathematics</p>
             <div class="profile-bio">
-                I use mathematics, machine learning, and systems programming 
-                to solve problems in financial markets and iOS/MacOS security.
+                I combine advanced mathematics, machine learning, and low‑level systems programming to tackle 
+                problems in both financial markets and mobile security research. 
             </div>
             <div class="profile-links">
                 <a href="mailto:brianroj@pm.me">Email</a>
