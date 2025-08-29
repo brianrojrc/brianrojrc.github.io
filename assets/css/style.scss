@@ -1053,3 +1053,70 @@ footer p:last-child {
         font-size: 16px;
     }
 }
+
+/* Contact page alignment fix - replace existing contact styles */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--text);
+    text-align: center;
+}
+
+.contact-section p {
+    font-size: 18px;
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 24px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.contact-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow);
+    border-color: var(--accent);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .contact-section {
+        min-height: 50vh;
+        padding: 40px 20px;
+    }
+    
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
