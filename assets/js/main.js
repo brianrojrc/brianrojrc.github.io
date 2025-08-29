@@ -1,5 +1,28 @@
-// Add to assets/js/main.js
+// Mobile menu functionality
+function toggleMobileMenu() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenu.classList.toggle('open');
+}
 
+// Close mobile menu when clicking outside
+document.addEventListener('click', function(event) {
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuButton = document.querySelector('.mobile-menu-button');
+    
+    if (!mobileMenu.contains(event.target) && !menuButton.contains(event.target)) {
+        mobileMenu.classList.remove('open');
+    }
+});
+
+// Close mobile menu on window resize
+window.addEventListener('resize', function() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (window.innerWidth > 968) {
+        mobileMenu.classList.remove('open');
+    }
+});
+
+// Font toggle functionality (your existing code)
 function toggleFont() {
     const body = document.body;
     const currentFont = body.getAttribute('data-font');
