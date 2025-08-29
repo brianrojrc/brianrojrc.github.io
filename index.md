@@ -9,7 +9,7 @@ title: Home
             <h1>Brian Rojas</h1>
             <p class="tagline">Electrical Engineering & CS + Mathematics</p>
             <div class="profile-bio">
-                I apply mathematics, machine learning, and low‑level systems programming to tackle 
+                I apply mathematics, machine learning, and low level programming to tackle 
                 problems in both financial markets and security research. 
             </div>
             <div class="profile-links">
