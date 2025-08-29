@@ -34,9 +34,10 @@ title: Home
                 </div>
             </div>
             <div class="news-item">
-                <div class="news-date">July 23, 2026</div>
+                <div class="news-date">June 23, 2025</div>
                 <div class="news-content">
-                    Launched volatility forecasting system achieving 15% improvement over baseline models
+                  I have developed an artificial neural network driven volatility arbitrage 
+                  strategy using LSTMs to forecast short term deviations between realized and implied vol.
                 </div>
             </div>
         </div>
