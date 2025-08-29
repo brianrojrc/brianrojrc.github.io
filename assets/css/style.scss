@@ -879,3 +879,177 @@ article.card h3 a:hover {
         padding: 40px 20px;
     }
 }
+
+/* Blog post and footer fixes - Add to your style.css */
+
+/* Fix body and html for sticky footer */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content should grow to fill space */
+main {
+    flex: 1 0 auto;
+}
+
+/* Footer should stick to bottom */
+footer {
+    flex-shrink: 0;
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-light);
+    padding: 40px 0;
+    margin-top: auto;
+}
+
+footer .container {
+    text-align: center;
+}
+
+footer p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+footer p:last-child {
+    margin-bottom: 0;
+}
+
+/* Blog post specific styles */
+.blog-post {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.post-header {
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.post-date {
+    color: var(--text-tertiary);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+}
+
+.blog-post h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: var(--text);
+}
+
+.post-excerpt {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.post-content {
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+.post-content h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 48px 0 24px 0;
+    color: var(--text);
+    letter-spacing: -0.01em;
+}
+
+.post-content h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 40px 0 20px 0;
+    color: var(--text);
+    letter-spacing: -0.01em;
+}
+
+.post-content h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 32px 0 16px 0;
+    color: var(--text);
+}
+
+.post-content p {
+    margin-bottom: 24px;
+    line-height: 1.7;
+}
+
+.post-content em {
+    font-style: italic;
+    color: var(--accent);
+    font-weight: 500;
+}
+
+.post-content strong {
+    font-weight: 600;
+    color: var(--text);
+}
+
+/* Book recommendation specific styles */
+.post-content p em:first-child {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .blog-post {
+        padding: 40px 0;
+    }
+    
+    .blog-post h1 {
+        font-size: 32px;
+    }
+    
+    .post-content {
+        font-size: 16px;
+    }
+    
+    .post-content h1 {
+        font-size: 28px;
+    }
+    
+    .post-content h2 {
+        font-size: 24px;
+    }
+    
+    .post-content h3 {
+        font-size: 20px;
+    }
+    
+    footer {
+        padding: 32px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-post h1 {
+        font-size: 28px;
+    }
+    
+    .post-excerpt {
+        font-size: 16px;
+    }
+}
