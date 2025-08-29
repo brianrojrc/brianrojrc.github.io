@@ -10,8 +10,7 @@ title: Home
             <p class="tagline">Electrical Engineering & CS + Mathematics @ UCF</p>
             <div class="profile-bio">
                 I use mathematics, machine learning, and systems programming 
-                to solve problems in financial markets and iOS/MacOS security. Currently finding 
-                PAC bypasses for iOS jailbreak development and building volatility forecasting system.
+                to solve problems in financial markets and iOS/MacOS security.
             </div>
             <div class="profile-links">
                 <a href="mailto:brianroj@pm.me">Email</a>
