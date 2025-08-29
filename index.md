@@ -82,7 +82,7 @@ title: Home
             <h3>Contact Information</h3>
             <p><strong>Email:</strong> brianroj [at] pm [dot] me</p>
             <p><strong>Location:</strong> Orlando, Florida</p>
-            <p><strong>University:</strong> UCF</p>
+            <p><strong>University:</strong> University Of Central Florida </p>
             <p><strong>Major:</strong> Computer Engineering & Mathematics</p>
         </div>
     </div>
