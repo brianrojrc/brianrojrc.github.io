@@ -7,7 +7,7 @@ title: Home
     <div class="profile-section">
         <div class="profile-header">
             <h1>Brian Rojas</h1>
-            <p class="tagline">Electrical Engineering & CS + Mathematics @ UCF</p>
+            <p class="tagline">Electrical Engineering & CS + Mathematics</p>
             <div class="profile-bio">
                 I use mathematics, machine learning, and systems programming 
                 to solve problems in financial markets and iOS/MacOS security.
