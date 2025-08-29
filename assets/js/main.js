@@ -1,30 +1,22 @@
-function toggleMenu() {
-    const navLinks = document.getElementById('navLinks');
-    if (navLinks) {
-        navLinks.classList.toggle('active');
+// Add to assets/js/main.js
+
+function toggleFont() {
+    const body = document.body;
+    const currentFont = body.getAttribute('data-font');
+    
+    if (currentFont === 'mono') {
+        body.removeAttribute('data-font');
+        localStorage.setItem('font-preference', 'sans');
+    } else {
+        body.setAttribute('data-font', 'mono');
+        localStorage.setItem('font-preference', 'mono');
     }
 }
 
+// Load saved font preference
 document.addEventListener('DOMContentLoaded', () => {
-    // Close mobile menu when clicking nav links
-    document.addEventListener('click', (e) => {
-        if (e.target.classList.contains('nav-link')) {
-            const navLinks = document.getElementById('navLinks');
-            if (navLinks) {
-                navLinks.classList.remove('active');
-            }
-        }
-    });
-    
-    // Close mobile menu when clicking outside
-    document.addEventListener('click', (e) => {
-        const navLinks = document.getElementById('navLinks');
-        const menuToggle = document.querySelector('.menu-toggle');
-        
-        if (navLinks && menuToggle && 
-            !navLinks.contains(e.target) && 
-            !menuToggle.contains(e.target)) {
-            navLinks.classList.remove('active');
-        }
-    });
+    const savedFont = localStorage.getItem('font-preference');
+    if (savedFont === 'mono') {
+        document.body.setAttribute('data-font', 'mono');
+    }
 });

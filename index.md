@@ -3,48 +3,90 @@ layout: default
 title: Home
 ---
 
-<section class="hero">
-    <h1>Hi, I'm Brian Rojas</h1>
-    <p class="subtitle">Computer Engineering & Mathematics @ UCF</p>
-    <p class="description">
-        I use mathematics, machine learning, and systems programming 
-        to solve problems in financial markets and security research.
-    </p>
-    <div class="cta-buttons">
-        <a href="{{ '/projects' | relative_url }}" class="btn btn-primary">
-            View Projects
-        </a>
-        <a href="{{ '/contact' | relative_url }}" class="btn btn-secondary">
-            Get in Touch with me
-        </a>
-    </div>
-</section>
+<div class="main-content">
+    <div class="profile-section">
+        <div class="profile-header">
+            <h1>Brian Rojas</h1>
+            <p class="tagline">Computer Engineering & Mathematics @ UCF</p>
+            <div class="profile-bio">
+                I blend engineering mathematics, machine learning, and systems programming 
+                to solve problems in financial markets and security research. Currently finding 
+                PAC bypasses for iOS jailbreak development and building volatility forecasting systems.
+            </div>
+            <div class="profile-links">
+                <a href="mailto:brianroj@pm.me">Email</a>
+                <a href="https://www.linkedin.com/in/brian-rojas-9b0b5237a" target="_blank">LinkedIn</a>
+                <a href="/blog">Blog</a>
+            </div>
+        </div>
 
-<section class="fade-in">
-    <h2>What I Do</h2>
-    <p class="section-description">
-        My current porjects and works.
-    </p>
-    <div class="grid">
-        <div class="card">
-            <div class="card-icon">📱</div>
-            <h3>iOS Security Research</h3>
-            <p>Currently working on PAC (Pointer Authentication Code) bypass techniques for iOS jailbreak development and kernel exploitation.</p>
+        <div class="news-section">
+            <h2>news</h2>
+            <div class="news-item">
+                <div class="news-date">Jan 15, 2025</div>
+                <div class="news-content">
+                    New blog post on <a href="/blog">book recommendations</a> that shaped my approach to mathematics and programming
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">Dec 28, 2024</div>
+                <div class="news-content">
+                    Started research on PAC bypass techniques for iOS kernel exploitation
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">Nov 15, 2024</div>
+                <div class="news-content">
+                    Launched volatility forecasting system achieving 15% improvement over baseline models
+                </div>
+            </div>
         </div>
-        <div class="card">
-            <div class="card-icon">📈</div>
-            <h3>Volatility Trading & Forecasting</h3>
-            <p>Building machine learning systems to forecast volatility surfaces and trade vol in options markets. Deep dive into orderbook microstructure.</p>
+
+        <div class="posts-section">
+            <h2>latest posts</h2>
+            {% for post in site.posts limit:5 %}
+            <div class="post-item">
+                <div class="post-date">{{ post.date | date: "%b %d, %Y" }}</div>
+                <a href="{{ post.url | relative_url }}" class="post-title">{{ post.title }}</a>
+            </div>
+            {% endfor %}
         </div>
-        <div class="card">
-            <div class="card-icon">⚡</div>
-            <h3>Systems Programming</h3>
-            <p>High-performance systems in C/C++, Python, and Rust. Focus on low-latency financial applications and kernel-level security research.</p>
-        </div>
-        <div class="card">
-            <div class="card-icon">🔬</div>
-            <h3>Applied Mathematics & Physics</h3>
-            <p>Leveraging mathematical models from physics and engineering to solve real-world problems in both security and quantitative finance.</p>
+
+        <div class="publications-section">
+            <h2>selected projects</h2>
+            <div class="publication-item">
+                <div class="publication-title">iOS PAC Bypass Research</div>
+                <div class="publication-details">
+                    Developing novel approaches to bypass Pointer Authentication Codes in iOS kernel exploitation. 
+                    Focus on ARM64 assembly optimization and modern security mechanisms.
+                </div>
+            </div>
+            <div class="publication-item">
+                <div class="publication-title">Volatility Forecasting Engine</div>
+                <div class="publication-details">
+                    Machine learning system for forecasting volatility surfaces in options markets. 
+                    Built with Python, TensorFlow, and real-time market data processing.
+                </div>
+            </div>
+            <div class="publication-item">
+                <div class="publication-title">Low-Latency Trading Infrastructure</div>
+                <div class="publication-details">
+                    High-performance trading system built in Rust and C++ for sub-microsecond order execution.
+                    Features FPGA acceleration and direct market access.
+                </div>
+            </div>
         </div>
     </div>
-</section>
+
+    <div class="sidebar">
+        <img src="/assets/images/profile.jpg" alt="Brian Rojas" class="profile-image" style="background: var(--bg-secondary); min-height: 300px; display: flex; align-items: center; justify-content: center; color: var(--text-tertiary);">
+        
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p><strong>Email:</strong> brianroj@pm.me</p>
+            <p><strong>Location:</strong> Orlando, Florida</p>
+            <p><strong>University:</strong> UCF</p>
+            <p><strong>Major:</strong> Computer Engineering + Math</p>
+        </div>
+    </div>
+</div>
