@@ -10,7 +10,7 @@ title: Home
             <p class="tagline">Electrical Engineering & CS + Mathematics</p>
             <div class="profile-bio">
                 I combine advanced mathematics, machine learning, and low‑level systems programming to tackle 
-                problems in both financial markets and mobile security research. 
+                problems in both financial markets and security research. 
             </div>
             <div class="profile-links">
                 <a href="mailto:brianroj@pm.me">Email</a>
