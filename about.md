@@ -27,7 +27,7 @@ Outside of academics, I enjoy chess, cooking, and running with my uni’s track 
         </div>
         <div class="card">
             <h3>College Years - The Pivot</h3>
-            <p>Started in Finance but switched to Engineering for more mathematical rigor.</p>
+            <p>Started in Finance, switched to Engineering for more mathematical rigor.</p>
         </div>
         <div class="card">
             <h3>Present - Current Focus</h3>
