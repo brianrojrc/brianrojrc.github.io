@@ -71,7 +71,6 @@ title: Home
                 <div class="publication-title">Low-Latency Trading Infrastructure</div>
                 <div class="publication-details">
                     High-performance trading system built in Rust and C++ for sub-microsecond order execution.
-                    Features FPGA acceleration and direct market access.
                 </div>
             </div>
         </div>
