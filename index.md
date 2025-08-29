@@ -7,7 +7,7 @@ title: Home
     <div class="profile-section">
         <div class="profile-header">
             <h1>Brian Rojas</h1>
-            <p class="tagline">Computer Engineering & Mathematics @ UCF</p>
+            <p class="tagline">Electrical Engineering & CS + Mathematics @ UCF</p>
             <div class="profile-bio">
                 I use mathematics, machine learning, and systems programming 
                 to solve problems in financial markets and iOS/MacOS security. Currently finding 
@@ -81,10 +81,10 @@ title: Home
         
         <div class="contact-info">
             <h3>Contact Information</h3>
-            <p><strong>Email:</strong> brianroj@pm.me</p>
+            <p><strong>Email:</strong> brianroj [at] pm [dot] me</p>
             <p><strong>Location:</strong> Orlando, Florida</p>
             <p><strong>University:</strong> UCF</p>
-            <p><strong>Major:</strong> Computer Engineering + Math</p>
+            <p><strong>Major:</strong> Computer Engineering & Mathematics</p>
         </div>
     </div>
 </div>
