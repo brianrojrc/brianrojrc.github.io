@@ -34,7 +34,7 @@ title: Home
                 </div>
             </div>
             <div class="news-item">
-                <div class="news-date">June 23, 2025</div>
+                <div class="news-date">Jun 23, 2025</div>
                 <div class="news-content">
                   I have developed an artificial neural network driven volatility arbitrage 
                   strategy using LSTMs to forecast short term deviations between realized and implied vol.
