@@ -6,11 +6,9 @@ title: About
 <section class="hero">
     <h1>About Me</h1>
     <p class="description">
-        A bit about me, I was born and raised in Florida as a first gen. 
-        Throughout my life, I’ve moved between Fort Pierce and Jupiter. I attended IRSC, where I earned an Associate of Arts in Finance and Engineering. 
-        Later, I was accepted into both the University of Florida and the University of Central Florida. I chose to become a Knight (Go Knights!), 
-        and I spent years learning advanced math and the financial markets through self-study and the guidance of my professors at IRSC. I decided to switch from Finance to Engineering because a Finance degree wouldn’t lead me to my desired path (it wasn’t challenging enough either). 
-        I received help from Kris Sidal from Ambrus Group and Agustin Lebron from Jane Street to pursue Computer Engineering. I love cooking steak and running when I’m not working or studying.
+        I’m a first-generation college student, engineer, and volunteer passionate about using math and engineering to make a positive impact. I’m currently studying Electrical Engineering and Computer Science with a minor in Mathematics at the University of Central Florida. I started programming at age 11 with Objective-C and Python, and later earned an Associate of Applied Science in Finance and Engineering at Indian River State College. Accepted to both UF and UCF, I chose to become a Knight (Go Knights!), where I deepened my knowledge of advanced math and financial markets before pivoting from Finance to Computer Engineering with guidance from mentors at Ambrus Group and Jane Street.
+
+Outside of academics, I enjoy chess, cooking, and running with my uni’s track club :)
     </p>
 </section>
 
@@ -19,7 +17,7 @@ title: About
     <div class="grid">
         <div class="card">
             <h3>Age 11 - Early Start</h3>
-            <p>Began iOS development and hardware repair, diving deep into device security and jailbreaking.</p>
+            <p>Began iOS development, diving deep into device security and jailbreaking.</p>
         </div>
         <div class="card">
             <h3>Age 13 - First App</h3>
