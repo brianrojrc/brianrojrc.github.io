@@ -78,7 +78,6 @@ title: Home
     </div>
 
     <div class="sidebar">
-        <img! src="/assets/images/profile.jpg" alt="Brian Rojas" class="profile-image" style="background: var(--bg-secondary); min-height: 300px; display: flex; align-items: center; justify-content: center; color: var(--text-tertiary);">
         
         <div class="contact-info">
             <h3>Contact Information</h3>
