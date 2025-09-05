@@ -31,7 +31,7 @@ Outside of academics, I enjoy chess, cooking, and running with my uni’s track 
         </div>
         <div class="card">
             <h3>Present - Current Focus</h3>
-            <p>Majoring in Computer Engineering and Mathematics at UCF. Working on PAC bypass techniques for iOS jailbreaks and building volatility forecasting systems using ML. Primary languages: C/C++, Python, and Rust.</p>
+            <p>Currently pursuing a Bachelor of Science in Computer Engineering and Mathematics at the University of Central Florida (UCF), I am actively engaged in research projects focused on machine learning and hardware accleration. My primary objective is to attend Stanford University and pursue a Master of Science in Computer Engineering.</p>
         </div>
     </div>
 </section>
