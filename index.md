@@ -22,22 +22,22 @@ title: Home
         <div class="news-section">
             <h2>news</h2>
             <div class="news-item">
-                <div class="news-date">Aug 28, 2025</div>
+                <div class="news-date">Aug 28th, 2025</div>
                 <div class="news-content">
                     New blog post on <a href="/blog">book recommendations</a> that helped me
                 </div>
             </div>
             <div class="news-item">
-                <div class="news-date">Oct 14, 2024</div>
+                <div class="news-date">March 14th, 2025</div>
                 <div class="news-content">
-                    Started research on PAC bypass techniques for iOS kernel exploitation
+                    I have developed an artificial neural network driven volatility arbitrage 
+                  strategy using LSTMs to forecast short term deviations between realized and implied vol.
                 </div>
             </div>
             <div class="news-item">
-                <div class="news-date">Jun 23, 2025</div>
+                <div class="news-date">Febuary 23rd, 2024</div>
                 <div class="news-content">
-                  I have developed an artificial neural network driven volatility arbitrage 
-                  strategy using LSTMs to forecast short term deviations between realized and implied vol.
+                    Started research expliots on PAC bypass for IOS devices.
                 </div>
             </div>
         </div>
