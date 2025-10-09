@@ -11,17 +11,17 @@ title: Research
 
 <section class="research-section">
     <span class="section-marker">[2]</span>
-    <h2>Current Projects</h2>
+    <h2>Active Projects</h2>
     
     <div class="research-item">
         <div class="research-header">
             <h3 class="research-title">Neural Network-Driven Volatility Arbitrage</h3>
             <span class="research-status">Active</span>
         </div>
-        <p class="research-description">Developed an artificial neural network-driven volatility arbitrage strategy using LSTMs to forecast short-term deviations between realized and implied volatility. The system analyzes market microstructure and orderbook dynamics to identify profitable trading opportunities.</p>
+        <p class="research-description">Developed an artificial neural network-driven volatility arbitrage strategy using LSTMs to forecast short-term deviations between realized and implied volatility.</p>
         <div class="research-meta">
             <span class="research-field">Quantitative Finance</span>
-            <span class="research-date">2024 – Present</span>
+            <span class="research-date">2024</span>
         </div>
     </div>
 
