@@ -5,7 +5,7 @@ title: Home
 
 <header class="page-header">
     <span class="page-marker">[1]</span>
-    <h1>Brian Rojas's Digital Home</h1>
+    <h1>Brian Rojas</h1>
     <p class="intro">I'm a Computer Engineering & Mathematics student at the University of Central Florida. I apply mathematics, machine learning and low level programming to solve problems in financial markets and security research. I enjoy building systems that solve complex problems in creative ways.</p>
     <p class="currently">Currently, a researcher in machine learning at UCF & machine learning engineer at NASA suits.</p>
 </header>
