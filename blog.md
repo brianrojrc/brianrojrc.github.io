@@ -6,7 +6,7 @@ title: Blog
 <header class="page-header">
     <span class="page-marker">[1]</span>
     <h1>Blog</h1>
-    <p class="intro">Thoughts on technology, mathematics, finance, and the lessons learned along the way.</p>
+    <p class="intro">My thoughts on academica and life.</p>
 </header>
 
 <div class="blog-list">
