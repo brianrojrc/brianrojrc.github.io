@@ -1,6 +1,9 @@
 ---
 ---
 
+// ABC Marist Book Font Import
+@import url('https://fonts.cdnfonts.com/css/abc-marist');
+
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +36,7 @@ html {
 body {
     background: var(--bg);
     color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+    font-family: 'ABC Marist', -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
     font-weight: 400;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -43,8 +46,8 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: "Charter", "Iowan Old Style", "Georgia", serif;
-    font-weight: 350;
+    font-family: 'ABC Marist', "Charter", "Iowan Old Style", "Georgia", serif;
+    font-weight: 400;
     letter-spacing: -0.02em;
 }
 
@@ -450,7 +453,7 @@ h1 {
     font-weight: 400;
     color: var(--text);
     margin-bottom: 16px;
-    font-family: "Charter", "Iowan Old Style", "Georgia", serif;
+    font-family: 'ABC Marist', "Charter", "Iowan Old Style", "Georgia", serif;
     letter-spacing: -0.02em;
 }
 
@@ -509,7 +512,7 @@ h1 {
     font-size: 22px;
     font-weight: 400;
     color: var(--text);
-    font-family: "Charter", "Iowan Old Style", "Georgia", serif;
+    font-family: 'ABC Marist', "Charter", "Iowan Old Style", "Georgia", serif;
     letter-spacing: -0.02em;
 }
 
