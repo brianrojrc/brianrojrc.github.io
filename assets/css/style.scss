@@ -694,6 +694,39 @@ footer {
         }
     }
 }
+/* Timeline styling for About page */
+.timeline-item {
+    margin-bottom: 48px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid var(--border);
+    
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.timeline-year {
+    font-size: 13px;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+}
+
+.timeline-item h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--text);
+    margin-bottom: 12px;
+    font-family: 'ABC Marist', "Charter", "Georgia", serif;
+}
+
+.timeline-item p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
 
 /* Mobile */
 @media (max-width: 968px) {
