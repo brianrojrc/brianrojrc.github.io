@@ -7,7 +7,7 @@ title: Home
     <span class="page-marker">[1]</span>
     <h1>Brian Rojas</h1>
     <p class="intro">I'm a Computer Engineering & Math student at the University of Central Florida. I apply mathematics, machine learning, and low level programming to tackle problems in financial markets and security research. I enjoy building systems that solve complex problems in creative ways.</p>
-    <p class="currently">Currently, a researcher in ML at UCF, specializing in algorithmic modeling in volatility stat arb & ML Engineer at NASA SUITS.</p>
+    <p class="currently">Currently, a researcher in machine learning at UCF, specializing in algorithmic modeling in volatility stat arb & machine learning engineer at NASA suits.</p>
 </header>
 
 <section class="projects-section">
