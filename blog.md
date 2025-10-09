@@ -3,22 +3,19 @@ layout: default
 title: Blog
 ---
 
-<section class="hero">
+<header class="page-header">
+    <span class="page-marker">[1]</span>
     <h1>Blog</h1>
-    <p class="description">
-        Thoughts on technology, mathematics, finance, and the lessons learned along the way.
-    </p>
-</section>
+    <p class="intro">Thoughts on technology, mathematics, finance, and the lessons learned along the way.</p>
+</header>
 
-<section class="fade-in">
-    <div class="grid">
-        {% for post in site.posts %}
-        <article class="card">
-            <div class="timeline-date">{{ post.date | date: "%B %Y" }}</div>
-            <h3><a href="{{ post.url | relative_url }}" style="text-decoration: none; color: var(--text-primary);">{{ post.title }}</a></h3>
-            <p>{{ post.excerpt }}</p>
-            <a href="{{ post.url | relative_url }}" style="color: var(--accent); text-decoration: none; font-weight: 500; margin-top: 12px; display: inline-block;">Read more →</a>
-        </article>
-        {% endfor %}
-    </div>
+<section class="blog-posts">
+    {% for post in site.posts %}
+    <article class="blog-post-item">
+        <div class="post-date">{{ post.date | date: "%B %Y" }}</div>
+        <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 150 }}</p>
+        <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
+    </article>
+    {% endfor %}
 </section>
