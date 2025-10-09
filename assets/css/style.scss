@@ -42,7 +42,7 @@ body {
     min-height: 100vh;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: "Charter", "Iowan Old Style", "Georgia", serif;
     font-weight: 350;
     letter-spacing: -0.02em;
@@ -60,6 +60,7 @@ h1, h2 {
     display: flex;
     flex-direction: column;
     gap: 48px;
+    z-index: 100;
 }
 
 .nav-header {
@@ -82,7 +83,7 @@ h1, h2 {
     gap: 16px;
     
     a {
-        font-size: 16px;
+        font-size: 15px;
         color: var(--text-secondary);
         text-decoration: none;
         transition: color 0.2s ease;
@@ -350,6 +351,233 @@ h1 {
     margin: 0;
 }
 
+/* Contact Page */
+.contact-section-simple {
+    margin-bottom: 160px;
+    
+    h2 {
+        font-size: 32px;
+        color: var(--text);
+        margin-bottom: 40px;
+    }
+}
+
+.contact-list-simple {
+    list-style: none;
+}
+
+.contact-item-simple {
+    display: flex;
+    gap: 20px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border);
+    align-items: flex-start;
+    
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.contact-label {
+    font-size: 14px;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.contact-info a,
+.contact-detail {
+    font-size: 18px;
+    color: var(--text);
+    text-decoration: none;
+    
+    &:hover {
+        color: var(--text-secondary);
+    }
+}
+
+.contact-detail {
+    color: var(--text-secondary);
+}
+
+/* Projects Page */
+.projects-list {
+    margin-bottom: 160px;
+    
+    h2 {
+        font-size: 32px;
+        color: var(--text);
+        margin-bottom: 48px;
+    }
+}
+
+.project-item-detailed {
+    margin-bottom: 64px;
+    padding-bottom: 64px;
+    border-bottom: 1px solid var(--border);
+    
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.project-header {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.project-number {
+    font-size: 14px;
+    color: var(--text-tertiary);
+    min-width: 24px;
+    font-weight: 500;
+}
+
+.project-content {
+    flex: 1;
+}
+
+.project-title-large {
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--text);
+    margin-bottom: 16px;
+    font-family: "Charter", "Iowan Old Style", "Georgia", serif;
+    letter-spacing: -0.02em;
+}
+
+.project-description {
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 4px 12px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: transparent;
+}
+
+/* Research Page */
+.research-section {
+    margin-bottom: 160px;
+    
+    h2 {
+        font-size: 32px;
+        color: var(--text);
+        margin-bottom: 48px;
+    }
+}
+
+.research-item {
+    margin-bottom: 56px;
+    padding-bottom: 56px;
+    border-bottom: 1px solid var(--border);
+    
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.research-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 16px;
+    gap: 20px;
+}
+
+.research-title {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--text);
+    font-family: "Charter", "Iowan Old Style", "Georgia", serif;
+    letter-spacing: -0.02em;
+}
+
+.research-status {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 4px 12px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    white-space: nowrap;
+}
+
+.research-description {
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+}
+
+.research-meta {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.research-field {
+    font-size: 14px;
+    color: var(--text-tertiary);
+}
+
+.research-date {
+    font-size: 13px;
+    color: var(--text-tertiary);
+    font-family: "SF Mono", "Monaco", "Courier New", monospace;
+}
+
+/* Research Interests Section */
+.interests-section {
+    margin-bottom: 160px;
+    
+    h2 {
+        font-size: 32px;
+        color: var(--text);
+        margin-bottom: 32px;
+    }
+}
+
+.interests-list {
+    list-style: none;
+    
+    li {
+        font-size: 17px;
+        color: var(--text-secondary);
+        padding: 12px 0;
+        border-bottom: 1px solid var(--border);
+        
+        &:last-child {
+            border-bottom: none;
+        }
+        
+        &:before {
+            content: "→";
+            margin-right: 12px;
+            color: var(--text-tertiary);
+        }
+    }
+}
+
 /* Footer */
 footer {
     padding-top: 60px;
@@ -432,6 +660,60 @@ footer {
         flex-direction: column;
         gap: 4px;
         margin-bottom: 20px;
+    }
+
+    .contact-item-simple {
+        flex-direction: column;
+        gap: 8px;
+        padding: 20px 0;
+    }
+    
+    .contact-section-simple {
+        margin-bottom: 100px;
+    }
+
+    .projects-list {
+        margin-bottom: 100px;
+    }
+    
+    .project-item-detailed {
+        margin-bottom: 48px;
+        padding-bottom: 48px;
+    }
+    
+    .project-header {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .project-title-large {
+        font-size: 24px;
+    }
+
+    .research-section,
+    .interests-section {
+        margin-bottom: 100px;
+    }
+    
+    .research-item {
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+    }
+    
+    .research-header {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+    
+    .research-title {
+        font-size: 20px;
+    }
+    
+    .research-meta {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
     }
 }
 
