@@ -6,7 +6,7 @@ title: Contact
 <header class="page-header">
     <span class="page-marker">[1]</span>
     <h1>Contact</h1>
-    <p class="intro">Feel free to reach out. I'm always open to discussing new projects, creative ideas, or opportunities.</p>
+    <p class="intro">Feel free to reach out.</p>
 </header>
 
 <section class="contact-section-simple">
@@ -33,6 +33,10 @@ title: Contact
             <div class="contact-info">
                 <span class="contact-label">Location</span>
                 <span class="contact-detail">Orlando, Florida</span>
+            </div>
+        </li>
+    </ul>
+</section>
             </div>
         </li>
     </ul>
