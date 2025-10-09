@@ -37,7 +37,7 @@ title: Home
                     <span class="experience-indicator ucf"></span>
                     <span>University of Central Florida</span>
                 </div>
-                <span class="experience-year">2022–26</span>
+                <span class="experience-year">2025</span>
             </li>
             <div class="experience-role">Undergraduate Research in ML</div>
             
@@ -46,7 +46,7 @@ title: Home
                     <span class="experience-indicator nasa"></span>
                     <span>NASA SUITS</span>
                 </div>
-                <span class="experience-year">2024–25</span>
+                <span class="experience-year">2025</span>
             </li>
             <div class="experience-role">Machine Learning/AI Engineer</div>
         </ul>
