@@ -11,11 +11,11 @@
 }
 
 :root {
-    --bg: #fafaf9;
-    --text: #171717;
+    --bg: #fff;
+    --text: #000;
     --text-secondary: #525252;
     --text-tertiary: #a3a3a3;
-    --border: #e5e5e5;
+    --border: #e1e4e8cc;
     --nav-width: 200px;
 }
 
@@ -36,17 +36,17 @@ html {
 body {
     background: var(--bg);
     color: var(--text);
-    font-family: 'ABC Marist', -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+    font-family: 'ABC Marist', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
     font-weight: 400;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    letter-spacing: -0.003em;
+    letter-spacing: -0.01em;
     display: flex;
     min-height: 100vh;
 }
 
 h1, h2, h3 {
-    font-family: 'ABC Marist', "Charter", "Iowan Old Style", "Georgia", serif;
+    font-family: 'ABC Marist', "Charter", "Georgia", serif;
     font-weight: 400;
     letter-spacing: -0.02em;
 }
@@ -453,7 +453,7 @@ h1 {
     font-weight: 400;
     color: var(--text);
     margin-bottom: 16px;
-    font-family: 'ABC Marist', "Charter", "Iowan Old Style", "Georgia", serif;
+    font-family: 'ABC Marist', "Charter", "Georgia", serif;
     letter-spacing: -0.02em;
 }
 
@@ -512,7 +512,7 @@ h1 {
     font-size: 22px;
     font-weight: 400;
     color: var(--text);
-    font-family: 'ABC Marist', "Charter", "Iowan Old Style", "Georgia", serif;
+    font-family: 'ABC Marist', "Charter", "Georgia", serif;
     letter-spacing: -0.02em;
 }
 
