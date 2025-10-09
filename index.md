@@ -6,13 +6,13 @@ title: Home
 <header class="page-header">
     <span class="page-marker">[1]</span>
     <h1>Brian Rojas</h1>
-    <p class="intro">I'm a Computer Engineering & Math student at the University of Central Florida. I apply mathematics, machine learning, and low level programming to tackle problems in financial markets and security research. I enjoy building ambitious systems that solve complex problems in creative ways.</p>
-    <p class="currently">Currently, a researcher in ML at UCF, specializing in algorithmic modeling in volatility stat arb.</p>
+    <p class="intro">I'm a Computer Engineering & Math student at the University of Central Florida. I apply mathematics, machine learning, and low level programming to tackle problems in financial markets and security research. I enjoy building systems that solve complex problems in creative ways.</p>
+    <p class="currently">Currently, a researcher in ML at UCF, specializing in algorithmic modeling in volatility stat arb & ML Engineer at NASA SUITS.</p>
 </header>
 
 <section class="projects-section">
     <span class="section-marker">[2]</span>
-    <h2>Selected Projects</h2>
+    <h2>Projects</h2>
     <div class="project-item">
         <div class="project-title">iOS PAC Bypass Research</div>
         <div class="project-description">Researching to bypass PAC in iOS kernel exploitation.</div>
