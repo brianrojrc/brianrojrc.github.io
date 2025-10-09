@@ -13,6 +13,7 @@
     --text-secondary: #525252;
     --text-tertiary: #a3a3a3;
     --border: #e5e5e5;
+    --nav-width: 200px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,13 +38,72 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     letter-spacing: -0.003em;
-    padding: 60px 40px 120px;
+    display: flex;
+    min-height: 100vh;
 }
 
 h1, h2 {
     font-family: "Charter", "Iowan Old Style", "Georgia", serif;
     font-weight: 350;
     letter-spacing: -0.02em;
+}
+
+/* Sidebar Navigation */
+.sidebar-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: var(--nav-width);
+    height: 100vh;
+    padding: 60px 32px;
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.nav-header {
+    .site-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--text);
+        text-decoration: none;
+        
+        &:hover {
+            color: var(--text-secondary);
+        }
+    }
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+    a {
+        font-size: 16px;
+        color: var(--text-secondary);
+        text-decoration: none;
+        transition: color 0.2s ease;
+        
+        &:hover {
+            color: var(--text);
+        }
+        
+        &.active {
+            color: var(--text);
+            font-weight: 500;
+        }
+    }
+}
+
+/* Main Content Area */
+.main-content {
+    margin-left: var(--nav-width);
+    flex: 1;
+    padding: 60px 40px 120px;
+    width: calc(100% - var(--nav-width));
 }
 
 .container {
@@ -294,6 +354,7 @@ h1 {
 footer {
     padding-top: 60px;
     border-top: 1px solid var(--border);
+    margin-top: auto;
 
     p {
         font-size: 14px;
@@ -304,8 +365,36 @@ footer {
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 968px) {
     body {
+        flex-direction: column;
+    }
+
+    .sidebar-nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 32px 24px;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 24px;
+        
+        a {
+            font-size: 15px;
+        }
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
         padding: 40px 24px 80px;
     }
 
@@ -343,5 +432,15 @@ footer {
         flex-direction: column;
         gap: 4px;
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .sidebar-nav {
+        padding: 24px;
     }
 }
