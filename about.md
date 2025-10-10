@@ -5,8 +5,7 @@ title: About
 <header class="page-header">
     <span class="page-marker">[1]</span>
     <h1>About Me</h1>
-    <p class="intro">Computer Engineering and Mathematics student at UCF passionate about applying mathematics, machine learning, and low level programming to build models for financial markets and machine learning research. I enjoy building systems that solve complex problems in creative ways.</p>
-    <p class="currently">Currently, a machine learning researcher and engineer at UCF and NASA suits.</p>
+    <p class="intro">college student, engineer, volatility enthusiast/p>
 </header>
 
 <section class="about-content">
