@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
+    <!-- Mathematical Background - MUST BE FIRST -->
+    <div class="math-background" id="mathBackground"></div>
+
     <!-- Mobile Menu Toggle -->
     <button class="mobile-menu-toggle" id="mobileMenuToggle">
         <span></span>
@@ -39,9 +42,6 @@
             </footer>
         </div>
     </main>
-
-    <!-- Mathematical Background -->
-    <div class="math-background" id="mathBackground"></div>
 
     <!-- Scripts -->
     <script>
@@ -80,35 +80,11 @@
 
         // Mathematical Background Generator
         const equations = [
-            // Partial Derivatives
-            '∂V/∂t',
-            '∂²V/∂S²',
-            '∂V/∂S',
-            '∂f/∂x',
-            '∂²f/∂x∂y',
-            '∇f',
-            
-            // Greeks
-            'Δ', 'Γ', 'θ', 'ν', 'ρ',
-            'α', 'β', 'γ', 'λ', 'σ', 'μ',
-            
-            // Volatility
-            'σ²',
-            'σᵢₘₚₗᵢₑd',
-            'σₗₒcₐₗ',
-            'dW',
-            
-            // Machine Learning
-            '∇θJ',
-            '∂L/∂W',
-            'η∇J',
-            'ReLU(x)',
-            
-            // Stochastic Calculus
-            'dS = μdt + σdW',
-            'E[dW²] = dt',
-            
-            // Symbols
+            '∂V/∂t', '∂²V/∂S²', '∂V/∂S', '∂f/∂x', '∂²f/∂x∂y', '∇f',
+            'Δ', 'Γ', 'θ', 'ν', 'ρ', 'α', 'β', 'γ', 'λ', 'σ', 'μ',
+            'σ²', 'σᵢₘₚₗᵢₑd', 'σₗₒcₐₗ', 'dW',
+            '∇θJ', '∂L/∂W', 'η∇J', 'ReLU(x)',
+            'dS = μdt + σdW', 'E[dW²] = dt',
             '∫', '∑', '∂', '∇', 'Σ', 'Θ', 'Λ'
         ];
 
@@ -125,63 +101,47 @@
             for (let i = 0; i < numberOfEquations; i++) {
                 const equation = document.createElement('div');
                 equation.className = 'math-equation';
-                
-                // Random equation
                 equation.textContent = equations[Math.floor(Math.random() * equations.length)];
                 
-                // Random size
                 const sizes = ['small', 'medium', 'large'];
                 equation.classList.add(sizes[Math.floor(Math.random() * sizes.length)]);
                 
-                // Random base position
                 const baseX = Math.random() * 100;
                 const baseY = Math.random() * 100;
                 
-                // Store initial position and parallax depth
                 equationElements.push({
                     element: equation,
                     baseX: baseX,
                     baseY: baseY,
-                    depth: 0.5 + Math.random() * 1.5 // Different parallax depths (0.5 to 2)
+                    depth: 0.5 + Math.random() * 1.5
                 });
                 
                 container.appendChild(equation);
             }
             
-            // Start mouse tracking
             startMouseTracking();
         }
 
         function startMouseTracking() {
             document.addEventListener('mousemove', (e) => {
-                // Normalize mouse position to -1 to 1 range
                 mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
                 mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
             });
             
-            // Animate equations with parallax effect
             function animate() {
                 equationElements.forEach((eq) => {
-                    // Apply parallax offset based on mouse position and depth
-                    // Mouse at center (0,0) = no offset
-                    // Mouse at edges = offset based on depth
-                    const offsetX = mouseX * eq.depth * 3; // Multiply by 3 for more movement
+                    const offsetX = mouseX * eq.depth * 3;
                     const offsetY = mouseY * eq.depth * 3;
-                    
                     const newX = eq.baseX + offsetX;
                     const newY = eq.baseY + offsetY;
-                    
                     eq.element.style.left = newX + '%';
                     eq.element.style.top = newY + '%';
                 });
-                
                 requestAnimationFrame(animate);
             }
-            
             animate();
         }
 
-        // Initialize math background
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', createMathBackground);
         } else {
