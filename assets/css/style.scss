@@ -54,6 +54,7 @@ body {
     letter-spacing: -0.01em;
     display: flex;
     min-height: 100vh;
+    flex-direction: column;
     transition: background-color var(--transition-medium) var(--easing);
 }
 
@@ -205,6 +206,8 @@ h1, h2, h3 {
     padding: 60px 40px 120px;
     width: calc(100% - var(--nav-width));
     animation: fadeIn var(--transition-slow) var(--easing);
+    display: flex;
+    flex-direction: column;
 }
 
 @keyframes fadeIn {
