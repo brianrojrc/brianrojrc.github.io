@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-    <nav class="sidebar-nav">
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar-nav" id="sidebarNav">
         <div class="nav-header">
             <a href="{{ '/' | relative_url }}" class="site-title">Brian Rojas</a>
         </div>
@@ -20,6 +28,8 @@
             <li><a href="{{ '/contact' | relative_url }}" {% if page.url contains 'contact' %}class="active"{% endif %}>Contact</a></li>
         </ul>
     </nav>
+
+    <!-- Main Content -->
     <main class="main-content">
         <div class="container">
             {{ content }}
@@ -27,5 +37,158 @@
     </main>
     
     {% include footer.html %}
+
+    <!-- Mathematical Background -->
+    <div class="math-background" id="mathBackground"></div>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+            const sidebarNav = document.getElementById('sidebarNav');
+            
+            if (mobileMenuToggle && sidebarNav) {
+                mobileMenuToggle.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    sidebarNav.classList.toggle('active');
+                });
+                
+                // Close menu when clicking outside
+                document.addEventListener('click', function(event) {
+                    const isClickInsideNav = sidebarNav.contains(event.target);
+                    const isClickOnToggle = mobileMenuToggle.contains(event.target);
+                    
+                    if (!isClickInsideNav && !isClickOnToggle && sidebarNav.classList.contains('active')) {
+                        mobileMenuToggle.classList.remove('active');
+                        sidebarNav.classList.remove('active');
+                    }
+                });
+                
+                // Close menu when clicking a link
+                const navLinks = sidebarNav.querySelectorAll('a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        mobileMenuToggle.classList.remove('active');
+                        sidebarNav.classList.remove('active');
+                    });
+                });
+            }
+        });
+
+        // Mathematical Background Generator
+        const equations = [
+            // Black-Scholes
+            '∂V/∂t + ½σ²S²∂²V/∂S² + rS∂V/∂S - rV = 0',
+            'C = S₀N(d₁) - Ke⁻ʳᵗN(d₂)',
+            
+            // Greeks
+            'Δ = ∂V/∂S',
+            'Γ = ∂²V/∂S²',
+            'θ = -∂V/∂t',
+            'ν = ∂V/∂σ',
+            'ρ = ∂V/∂r',
+            
+            // Partial Derivatives
+            '∂f/∂x = lim[h→0] (f(x+h) - f(x))/h',
+            '∂²f/∂x∂y',
+            '∇f = (∂f/∂x, ∂f/∂y, ∂f/∂z)',
+            
+            // Linear Algebra
+            'Ax = λx',
+            'A = UΣVᵀ',
+            '||x||₂ = √(Σxᵢ²)',
+            'xᵀAx',
+            'det(A - λI) = 0',
+            
+            // Machine Learning
+            'J(θ) = 1/2m Σ(hθ(x⁽ⁱ⁾) - y⁽ⁱ⁾)²',
+            '∇θJ = 1/m Xᵀ(Xθ - y)',
+            'θ := θ - α∇J(θ)',
+            'σ(z) = 1/(1 + e⁻ᶻ)',
+            'L = -Σ yᵢlog(ŷᵢ)',
+            
+            // Calculus
+            '∫₀^∞ e⁻ˣ² dx = √π/2',
+            '∮ F·dr = ∬(∇×F)·dS',
+            
+            // Probability
+            'E[X] = Σ xᵢP(xᵢ)',
+            'Var(X) = E[X²] - (E[X])²',
+            'P(A|B) = P(B|A)P(A)/P(B)',
+            
+            // Matrix Operations
+            '(AB)ᵀ = BᵀAᵀ',
+            'tr(AB) = tr(BA)',
+            'A⁻¹A = I',
+            
+            // Optimization
+            '∇²f(x) = H(x)',
+            'min f(x) s.t. g(x) ≤ 0',
+            'L(x,λ) = f(x) + λᵀg(x)',
+            
+            // Stochastic Calculus
+            'dS = μSdt + σSdW',
+            'E[dW] = 0, E[dW²] = dt',
+            
+            // Volatility
+            'σᵢₘₚₗᵢₑd',
+            'σₗₒcₐₗ(S,t)',
+            
+            // Greek Letters & Symbols
+            'α β γ δ ε ζ η θ',
+            'λ μ ν ξ π ρ σ τ',
+            'φ χ ψ ω Δ Γ Θ Λ',
+            'Σ Φ Ψ Ω ∂ ∇ ∫ ∮',
+            
+            // Additional ML
+            'ŷ = Wᵀx + b',
+            'ReLU(x) = max(0, x)',
+            'softmax(xᵢ) = eˣⁱ/Σeˣʲ',
+            
+            // Quantitative Finance
+            'r = μ - σ²/2',
+            'S(T) = S₀e^((μ-σ²/2)T + σW(T))',
+            'V(S,t) = e⁻ʳ⁽ᵀ⁻ᵗ⁾E[V(S_T,T)]'
+        ];
+
+        function createMathBackground() {
+            const container = document.getElementById('mathBackground');
+            if (!container) return;
+            
+            const numberOfEquations = 50;
+            
+            for (let i = 0; i < numberOfEquations; i++) {
+                const equation = document.createElement('div');
+                equation.className = 'math-equation';
+                
+                // Random equation
+                equation.textContent = equations[Math.floor(Math.random() * equations.length)];
+                
+                // Random size
+                const sizes = ['small', 'medium', 'large'];
+                equation.classList.add(sizes[Math.floor(Math.random() * sizes.length)]);
+                
+                // Random position
+                equation.style.left = Math.random() * 100 + '%';
+                equation.style.top = Math.random() * 100 + '%';
+                
+                // Random animation delay
+                equation.style.animationDelay = Math.random() * 20 + 's';
+                
+                // Random animation duration
+                equation.style.animationDuration = (40 + Math.random() * 40) + 's';
+                
+                container.appendChild(equation);
+            }
+        }
+
+        // Initialize math background
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', createMathBackground);
+        } else {
+            createMathBackground();
+        }
+    </script>
 </body>
 </html>
