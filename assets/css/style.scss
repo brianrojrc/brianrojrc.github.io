@@ -1594,4 +1594,149 @@ button, .button {
     &:active {
         transform: translateY(0);
     }
+    
+}
+/* About Page Specific Styles */
+.about-content {
+    margin-bottom: 120px;
+    
+    p {
+        font-size: 18px;
+        line-height: 1.7;
+        color: var(--text-secondary);
+        margin-bottom: 24px;
+        
+        strong {
+            font-weight: 600;
+            color: var(--text);
+        }
+    }
+}
+
+.journey-section {
+    margin-bottom: 120px;
+    
+    .timeline-container {
+        position: relative;
+        padding-left: 40px;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            bottom: 8px;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--text) 0%, var(--border) 100%);
+        }
+    }
+    
+    .timeline-item {
+        position: relative;
+        margin-bottom: 48px;
+        padding-bottom: 48px;
+        border-bottom: 1px solid var(--border);
+        opacity: 0;
+        animation: fadeInUp var(--transition-medium) var(--easing) forwards;
+        
+        @for $i from 1 through 10 {
+            &:nth-child(#{$i}) {
+                animation-delay: #{$i * 200}ms;
+            }
+        }
+        
+        &:last-child {
+            border-bottom: none;
+        }
+        
+        &::before {
+            content: '';
+            position: absolute;
+            left: -46px;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--text);
+            border: 3px solid var(--bg);
+            box-shadow: 0 0 0 2px var(--border);
+            transition: all var(--transition-medium) var(--easing);
+        }
+        
+        &:hover::before {
+            transform: scale(1.3);
+            box-shadow: 0 0 0 4px var(--border);
+        }
+        
+        .timeline-year {
+            font-size: 14px;
+            color: var(--text-tertiary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        h3 {
+            font-size: 22px;
+            color: var(--text);
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+        
+        p {
+            font-size: 17px;
+            line-height: 1.7;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+    }
+}
+
+/* MOBILE NAVIGATION FIX */
+@media (max-width: 968px) {
+    /* Ensure mobile menu toggle is visible */
+    .mobile-menu-toggle {
+        display: block !important;
+    }
+    
+    /* Fix sidebar for mobile */
+    .sidebar-nav {
+        transform: translateX(-100%);
+        z-index: 1000;
+        
+        &.active {
+            transform: translateX(0);
+        }
+    }
+    
+    .about-content {
+        margin-bottom: 80px;
+    }
+    
+    .journey-section {
+        margin-bottom: 80px;
+        
+        .timeline-container {
+            padding-left: 32px;
+        }
+        
+        .timeline-item::before {
+            left: -38px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .journey-section {
+        .timeline-item {
+            h3 {
+                font-size: 20px;
+            }
+            
+            p {
+                font-size: 16px;
+            }
+        }
+    }
 }
