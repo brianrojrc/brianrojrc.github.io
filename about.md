@@ -23,7 +23,7 @@ title: About
     
     <p>Currently, I'm a machine learning researcher at UCF and an engineer with NASA's spacesuit program. Outside of my studies, I tutor students in STEM subjects, run with my track club, and enjoy cooking steak.</p>
 
-</section>
+
 
 <section class="journey-section">
     <span class="section-marker">[3]</span>
