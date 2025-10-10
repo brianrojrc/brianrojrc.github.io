@@ -739,6 +739,7 @@ footer p {
     color: var(--text);
     white-space: nowrap;
     user-select: none;
+    will-change: transform, opacity;
     animation: float-equation 60s linear infinite;
 }
 
@@ -793,25 +794,25 @@ footer p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(ellipse at center, transparent 0%, transparent 40%, var(--bg) 100%);
+    background: radial-gradient(ellipse at center, transparent 0%, transparent 50%, var(--bg) 95%);
     pointer-events: none;
 }
 
 @media (prefers-color-scheme: dark) {
     .math-equation {
-        opacity: 0.015;
+        opacity: 0.03;
     }
     
     .math-equation.small {
-        opacity: 0.01;
+        opacity: 0.025;
     }
     
     .math-equation.medium {
-        opacity: 0.015;
+        opacity: 0.035;
     }
     
     .math-equation.large {
-        opacity: 0.02;
+        opacity: 0.04;
     }
 }
 
