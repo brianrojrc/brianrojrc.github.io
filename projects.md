@@ -11,7 +11,7 @@ title: Projects
 
 <section class="projects">
     <span class="section-marker">[2]</span>
-    <h2>Selected Work</h2>
+    <h2>Work</h2>
     
     <div class="project-item-detailed">
         <div class="project-header">
