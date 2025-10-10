@@ -739,8 +739,7 @@ footer p {
     color: var(--text);
     white-space: nowrap;
     user-select: none;
-    will-change: transform, opacity;
-    animation: float-equation 60s linear infinite;
+    transition: left 0.3s ease-out, top 0.3s ease-out, opacity 0.5s ease;
 }
 
 @keyframes float-equation {
