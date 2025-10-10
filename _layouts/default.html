@@ -133,18 +133,16 @@
                 const sizes = ['small', 'medium', 'large'];
                 equation.classList.add(sizes[Math.floor(Math.random() * sizes.length)]);
                 
-                // Random position
-                const startX = Math.random() * 100;
-                const startY = Math.random() * 100;
-                equation.style.left = startX + '%';
-                equation.style.top = startY + '%';
+                // Random base position
+                const baseX = Math.random() * 100;
+                const baseY = Math.random() * 100;
                 
-                // Store initial position and element
+                // Store initial position and parallax depth
                 equationElements.push({
                     element: equation,
-                    baseX: startX,
-                    baseY: startY,
-                    speedFactor: 0.02 + Math.random() * 0.03 // Different speeds for each equation
+                    baseX: baseX,
+                    baseY: baseY,
+                    depth: 0.5 + Math.random() * 1.5 // Different parallax depths (0.5 to 2)
                 });
                 
                 container.appendChild(equation);
@@ -156,23 +154,22 @@
 
         function startMouseTracking() {
             document.addEventListener('mousemove', (e) => {
-                mouseX = (e.clientX / window.innerWidth) * 100;
-                mouseY = (e.clientY / window.innerHeight) * 100;
+                // Normalize mouse position to -1 to 1 range
+                mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
+                mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
             });
             
-            // Animate equations following mouse
+            // Animate equations with parallax effect
             function animate() {
                 equationElements.forEach((eq) => {
-                    // Calculate distance from mouse
-                    const currentX = parseFloat(eq.element.style.left);
-                    const currentY = parseFloat(eq.element.style.top);
+                    // Apply parallax offset based on mouse position and depth
+                    // Mouse at center (0,0) = no offset
+                    // Mouse at edges = offset based on depth
+                    const offsetX = mouseX * eq.depth * 3; // Multiply by 3 for more movement
+                    const offsetY = mouseY * eq.depth * 3;
                     
-                    // Move towards mouse position with different speeds
-                    const deltaX = (mouseX - currentX) * eq.speedFactor;
-                    const deltaY = (mouseY - currentY) * eq.speedFactor;
-                    
-                    const newX = currentX + deltaX;
-                    const newY = currentY + deltaY;
+                    const newX = eq.baseX + offsetX;
+                    const newY = eq.baseY + offsetY;
                     
                     eq.element.style.left = newX + '%';
                     eq.element.style.top = newY + '%';
