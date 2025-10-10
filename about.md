@@ -5,8 +5,8 @@ title: About
 <header class="page-header">
     <span class="page-marker">[1]</span>
     <h1>About Me</h1>
-    <p class="intro">college student, engineer, volatility enthusiast/p>
-</header>
+    <p class="intro">college student, engineer, volatility enthusiast
+  
 
 <section class="about-content">
     <span class="section-marker">[2]</span>
@@ -21,8 +21,7 @@ title: About
     <p>Before transferring to UCF, I had the privilege of studying under Dr. Zheng, my physics professor at IRSC. His unique teaching style and mentorship impacted me, introducing advanced methods that reshaped how I approach solving problems and deepened my passion for education.</p>
     
     <p>Currently, I'm a machine learning researcher at UCF and an engineer with NASA's spacesuit program. Outside of my studies, I tutor students in STEM subjects, run with my track club, and enjoy cooking steak.</p>
-    
-    <p>Outside of academics, I enjoy chess, reading books, working out and cooking, and running with my track club.</p>
+
 </section>
 
 <section class="journey-section">
