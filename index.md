@@ -6,7 +6,7 @@ title: Home
 <header class="page-header">
     <span class="page-marker">[1]</span>
     <h1>Brian Rojas</h1>
-    <p class="intro">I'm a Computer Engineering & Mathematics student at the University of Central Florida. I apply mathematics, machine learning and low level programming to solve problems in financial markets and security research. I enjoy building systems that solve complex problems in creative ways.</p>
+    <p class="intro">I'm a Computer Engineering & Mathematics student at the University of Central Florida. I apply mathematics, machine learning and low level programming to build models for the financial markets and machine learning research. I enjoy building systems that solve complex problems in creative ways.</p>
     <p class="currently">Currently, a machine learning researcher and engineer at UCF and NASA suits.</p>
 </header>
 
@@ -64,7 +64,7 @@ title: Home
     </div>
     <div class="project-item">
         <div class="project-title">Volatility Forecasting</div>
-        <div class="project-description">Machine learning system for forecasting volatility surfaces in options markets. Built with Python, TensorFlow.</div>
+        <div class="project-description">Machine learning system for forecasting volatility surfaces in options markets.</div>
     </div>
     <div class="project-item">
         <div class="project-title">Low-Latency Trading Infrastructure</div>
