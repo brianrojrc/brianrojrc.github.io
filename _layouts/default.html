@@ -112,11 +112,15 @@
             '∫', '∑', '∂', '∇', 'Σ', 'Θ', 'Λ'
         ];
 
+        let mouseX = 0;
+        let mouseY = 0;
+        const equationElements = [];
+
         function createMathBackground() {
             const container = document.getElementById('mathBackground');
             if (!container) return;
             
-            const numberOfEquations = 20; // Reduced from 50
+            const numberOfEquations = 20;
             
             for (let i = 0; i < numberOfEquations; i++) {
                 const equation = document.createElement('div');
@@ -130,17 +134,54 @@
                 equation.classList.add(sizes[Math.floor(Math.random() * sizes.length)]);
                 
                 // Random position
-                equation.style.left = Math.random() * 100 + '%';
-                equation.style.top = Math.random() * 100 + '%';
+                const startX = Math.random() * 100;
+                const startY = Math.random() * 100;
+                equation.style.left = startX + '%';
+                equation.style.top = startY + '%';
                 
-                // Random animation delay
-                equation.style.animationDelay = Math.random() * 10 + 's';
-                
-                // Random animation duration
-                equation.style.animationDuration = (15 + Math.random() * 25) + 's';
+                // Store initial position and element
+                equationElements.push({
+                    element: equation,
+                    baseX: startX,
+                    baseY: startY,
+                    speedFactor: 0.02 + Math.random() * 0.03 // Different speeds for each equation
+                });
                 
                 container.appendChild(equation);
             }
+            
+            // Start mouse tracking
+            startMouseTracking();
+        }
+
+        function startMouseTracking() {
+            document.addEventListener('mousemove', (e) => {
+                mouseX = (e.clientX / window.innerWidth) * 100;
+                mouseY = (e.clientY / window.innerHeight) * 100;
+            });
+            
+            // Animate equations following mouse
+            function animate() {
+                equationElements.forEach((eq) => {
+                    // Calculate distance from mouse
+                    const currentX = parseFloat(eq.element.style.left);
+                    const currentY = parseFloat(eq.element.style.top);
+                    
+                    // Move towards mouse position with different speeds
+                    const deltaX = (mouseX - currentX) * eq.speedFactor;
+                    const deltaY = (mouseY - currentY) * eq.speedFactor;
+                    
+                    const newX = currentX + deltaX;
+                    const newY = currentY + deltaY;
+                    
+                    eq.element.style.left = newX + '%';
+                    eq.element.style.top = newY + '%';
+                });
+                
+                requestAnimationFrame(animate);
+            }
+            
+            animate();
         }
 
         // Initialize math background
