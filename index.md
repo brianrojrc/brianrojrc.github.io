@@ -6,8 +6,8 @@ title: Home
 <header class="page-header">
     <span class="page-marker">[1]</span>
     <h1>Brian Rojas</h1>
-    <p class="intro">I'm a Computer Engineering & Mathematics student at the University of Central Florida. I apply mathematics, machine learning and low level programming to build models for the financial markets and machine learning research. I enjoy building systems that solve complex problems in creative ways.</p>
-    <p class="currently">Currently, a machine learning researcher and engineer at UCF and NASA suits.</p>
+    <p class="intro">Hey, I'm Brian. I'm an Electrical Engineering & CS + Mathematics student at UCF. I combine math, low-level programming, and machine learning to build models to solve complex problems. My specialty is in quant finance. </p>
+    <p class="currently">I'm currently a full time student, working as a machine learning researcher and engineer at UCF and NASA suits.</p>
 </header>
 
 <div class="two-column">
