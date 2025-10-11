@@ -6,9 +6,8 @@ title: Home
 <header class="page-header">
     <span class="page-marker">[1]</span>
     <h1>Brian Rojas</h1>
-    <p class="intro">I'm Brian, an EE/CS + Mathematics student at UCF. I combine low level systems programming, mathematics, and machine learning to build high performance algorithms and models.
-</p>
-    <p class="currently">I'm currently a full time student, working as a machine learning researcher and engineer at UCF and NASA suits.</p>
+    <p class="intro"> I'm Brian, an EE & CS + Mathematics student at UCF. I combine mathematics, machine learning, and low-level systems programming to solve complex problems particularly in quantitative finance and ML engineering.
+    <p class="currently">Currently, working as a machine learning researcher and engineer at UCF and NASA suits.</p>
 </header>
 
 <div class="two-column">
