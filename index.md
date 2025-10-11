@@ -6,7 +6,7 @@ title: Home
 <header class="page-header">
     <span class="page-marker">[1]</span>
     <h1>Brian Rojas</h1>
-    <p class="intro">Hey, I'm Brian. I'm an Electrical Engineering & CS + Mathematics student at UCF. I combine math, low-level programming, and machine learning to build models to solve complex problems. My specialty is in quant finance. </p>
+    <p class="intro">Hey, I'm Brian. I'm an Electrical Engineering & CS + Mathematics student at UCF. I combine math, low level programming, and machine learning to solve complex problems.</p>
     <p class="currently">I'm currently a full time student, working as a machine learning researcher and engineer at UCF and NASA suits.</p>
 </header>
 
