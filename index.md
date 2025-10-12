@@ -6,7 +6,7 @@ title: Home
 <header class="page-header">
     <span class="page-marker">[1]</span>
     <h1>Brian Rojas</h1>
-    <p class="intro"> Brian is a Electrical Engineering & CS + Mathematics student at UCF. he applies mathematics, machine learning, and low level programming to solve complex problems particularly in quantitative finance and ML engineering.
+    <p class="intro"> I'm a EECS engineering student curious about markets and models, machine learning, and algorithmic systems. I enjoy building sophisticated tools that turn complex financial problems into predictable outcomes. I'm equally drawn to pure mathematics, physics, and machine learning.
     <p class="currently">Currently, working as a machine learning researcher and engineer at UCF and NASA suits.</p>
 
 <div class="two-column">
