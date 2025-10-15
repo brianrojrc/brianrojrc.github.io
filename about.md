@@ -15,7 +15,7 @@ title: About
     <p>A little about me: I was born and raised in St. Lucie, Florida. After high school, I was accepted to Cornell University and other state colleges, but due to financial constraints led me to begin at Indian River State College (IRSC) while helping support my family's businesses. After earning my AA, I was accepted to both UCF and UF, ultimately choosing UCF, where I'm currently pursuing a BS in Computer Engineering and Mathematics.
 
     
-    <p>I'm a first generation student, I'm the first to pursue higher education, and the only one in my family to go to college, earning this degree represents a significant milestone for my family..</p>
+    <p>I'm a first generation student, I'm the first to pursue higher education, so the pathway of working for this degree represents a significant milestone for my family.</p>
     
     <p>From a young age, I've been drawn to books, and learning any subject there could possibly be from philosophy to nutrition, but I grew uo loving to learn about computers and math. My curiosity led me to tweaking iOS hardware and software. I have a lot of interest and passion for Apple devices ever since I was a kid and eventually I explored machine learning and quant finance. Initially, I majored in finance at IRSC, due to having a passion for the markets when I turned 18. However, after seeking guidance from professionals like Agustín LeBron formerly from Jane Street and Kris Sidal from Ambrus Group, I realized I should've majored in the passion I always had: engineering. Though this decision set me back two years academically, it was the right choice for my long term goals..</p>
     
