@@ -6,8 +6,8 @@ title: Home
 <header class="page-header">
     <span class="page-marker">[1]</span>
     <h1>Brian Rojas</h1>
-    <p class="intro"> I'm an EE & CS + Math student at UCF. I have a strong background in quantitative finance, machine learning, and hardware security. I enjoy building algorithmic models and ML research. I'm equally drawn to pure mathematics and physics.
-    <p class="currently">Currently, working as a machine learning researcher and engineer at UCF and NASA suits.</p>
+    <p class="intro"> I'm an EE & CS + Math student at UCF. I have a strong background in quantitative finance, machine learning, and hardware security. I enjoy building algorithmic models and do ML research. I'm equally drawn to pure mathematics and physics.
+    <p class="currently">I'm currently working as a machine learning engineer at NASA suits & ML researcher at UCF.</p>
 
 <div class="two-column">
     <div class="column">
