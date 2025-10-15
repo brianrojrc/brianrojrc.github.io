@@ -12,16 +12,15 @@ title: About
     <span class="section-marker">[2]</span>
     <h2>Background</h2>
     
-    <p>A little about me: I was born and raised in St. Lucie, Florida. After high school, I was accepted to Cornell University and other state colleges, but due to financial constraints led me to begin at Indian River State College (IRSC) while helping support my family's businesses. After earning my AA, I was accepted to both UCF and UF, ultimately choosing UCF, where I'm currently pursuing a BS in Computer Engineering and Mathematics.
-
+    <p>A little about me: I was born and raised in St. Lucie, Florida. After high school, I was accepted to Cornell University and FL state colleges, but due to financial constraints, led me to persue my academic career at Indian River State College (IRSC) while helping support my family's businesses. After earning my AA, I was accepted to both UCF and UF, ultimately choosing UCF, where I'm currently pursuing a BS in Computer Engineering and a minor in Mathematics.
     
-    <p>I'm a first generation student, I'm the first to pursue higher education, so the pathway of working for this degree represents a significant milestone for my family.</p>
+    <p>As a first-generation college student, I'm the first in my family to pursue higher education, so working toward this degree represents a significant milestone for us all..</p>
     
-    <p>From a young age, I've been drawn to books, and learning any subject there could possibly be from philosophy to nutrition, but I grew uo loving to learn about computers and math. My curiosity led me to tweaking iOS hardware and software. I have a lot of interest and passion for Apple devices ever since I was a kid and eventually I explored machine learning and quant finance. Initially, I majored in finance at IRSC, due to having a passion for the markets when I turned 18. However, after seeking guidance from professionals like Agustín LeBron formerly from Jane Street and Kris Sidal from Ambrus Group, I realized I should've majored in the passion I always had: engineering. Though this decision set me back two years academically, it was the right choice for my long term goals..</p>
+    <p>From a young age, I've been curious about learning everything from philosophy to medicine, but mathematics and engineering is what I was passionate the most. I spent years exploring how Apple's operating systems worked, diving into both hardware and software, which led me into security research. In my early college years, I became fascinated by financial markets, particularly volatility and derivatives. This interest pushed me to learn machine learning. I started out majoring in finance at IRSC, but after talking with professionals like Agustín LeBron (a former trader at Jane Street) and Kris Sidal (a portfolio manager at Ambrus Group), I realized I needed to pursue what I'd always been passionate about: engineering. Switching majors set me back two years, but it was the right choice for my long term goals.</p>
     
     <p>Before transferring to UCF, I had the privilege of studying under Dr. Zheng, my physics professor at IRSC. His unique teaching style and mentorship impacted me, introducing advanced methods that reshaped how I approach solving problems and deepened my passion for education.</p>
     
-    <p>Outside of my studies, I tutor students in STEM subjects, participate in a track club, and enjoy cooking steak.</p>
+    <p>Outside of my studies, I tutor students in STEM subjects, participate in a run club, and enjoy cooking steak while listening to philosophy debates.</p>
 
 
 
