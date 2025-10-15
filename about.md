@@ -5,7 +5,7 @@ title: About
 <header class="page-header">
     <span class="page-marker">[1]</span>
     <h1>About Me</h1>
-    <p class="intro">college student, engineer, volatility enthusiast
+    <p class="intro">college student & eecs engineer
   
 
 <section class="about-content">
