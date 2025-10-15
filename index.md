@@ -6,7 +6,7 @@ title: Home
 <header class="page-header">
     <span class="page-marker">[1]</span>
     <h1>Brian Rojas</h1>
-    <p class="intro"> I'm an EE & CS + Math student curious about markets and models, machine learning, and hardware security. I enjoy building sophisticated tools that turn complex financial problems into predictable outcomes. I'm equally drawn to pure mathematics, physics, and machine learning.
+    <p class="intro"> I'm an EE & CS + Math student curious about markets and models, machine learning, and hardware security. I enjoy building sophisticated tools that turn complex financial problems into predictable outcomes. I'm equally drawn to pure mathematics and physics.
     <p class="currently">Currently, working as a machine learning researcher and engineer at UCF and NASA suits.</p>
 
 <div class="two-column">
