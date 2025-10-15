@@ -18,9 +18,9 @@ title: About
     
     <p>From a young age, I've been curious about learning everything from philosophy to medicine, but mathematics and engineering is what I was passionate the most. I spent years exploring how Apple's operating systems worked, diving into both hardware and software, which led me into security research. In my early college years, I became fascinated by financial markets, particularly volatility and derivatives. This interest pushed me to learn machine learning. I started out majoring in finance at IRSC, but after talking with professionals like Agustín LeBron (a former trader at Jane Street) and Kris Sidal (a portfolio manager at Ambrus Group), I realized I needed to pursue what I'd always been passionate about: engineering. Switching majors set me back two years, but it was the right choice for my long term goals.</p>
     
-    <p>Before transferring to UCF, I had the privilege of studying under Dr. Zheng, my physics professor at IRSC. His unique teaching style and mentorship impacted me, introducing advanced methods that reshaped how I approach solving problems and deepened my passion for education.</p>
+    <p>Before transferring to UCF, I had the privilege of studying under Dr. Zheng, my physics professor at IRSC. His unique teaching style and mentorship impacted me, introducing advanced methods that reshaped how I approach solving problems and deepened my passion for math and physics.</p>
     
-    <p>Outside of my studies, I tutor students in STEM subjects, participate in a run club, and enjoy cooking steak while listening to philosophy debates.</p>
+    <p>Outside of my studies, I tutor students in STEM subjects, participate in a run club, explore thrift stores and museums, and enjoy cooking steak while listening to philosophy debates and nutrition podcasts.</p>
 
 
 
