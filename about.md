@@ -32,7 +32,7 @@ title: About
         <div class="timeline-item">
             <div class="timeline-year">Teens</div>
             <h3>Early Start</h3>
-            <p>Began iOS development, diving deep into iOS device security.</p>
+            <p>Began iOS development, diving deep into iOS security.</p>
         </div>
         
         <div class="timeline-item">
