@@ -48,7 +48,7 @@ title: About
         <div class="timeline-item">
             <div class="timeline-year">Present</div>
             <h3>Current Focus</h3>
-            <p>Pursuing a BS in Computer Engineering and Mathematics at UCF working at NASA and Undergraded Researcher in ML at UCF. I have plans to pursue an MS in Electrical Engineering at Stanford University.</p>
+            <p>Pursuing a BS in Computer Engineering and Mathematics at UCF working at NASA and Undergrad Researcher in ML at UCF. I have plans to pursue an MS in Electrical Engineering at Stanford University.</p>
         </div>
     </div>
 </section>
