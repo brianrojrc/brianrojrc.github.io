@@ -7,7 +7,7 @@ title: Home
     <span class="page-marker">[1]</span>
     <h1>Brian Rojas</h1>
     <p class="intro"> I'm an EE & CS + Math student at UCF. I have a strong background in quantitative finance, machine learning, and hardware security. I enjoy building algorithmic models and do ML research. I'm equally drawn to pure mathematics and physics.
-    <p class="currently">I'm currently working as a machine learning engineer at NASA suits & ML researcher at UCF.</p>
+    <p class="currently">I'm currently working as a ML undergrad researcher at UCF.</p>
 
 <div class="two-column">
     <div class="column">
@@ -38,7 +38,7 @@ title: Home
                     <span class="experience-indicator ucf"></span>
                     <span>University of Central Florida</span>
                 </div>
-                <span class="experience-year">2025</span>
+                <span class="experience-year">August 2025 - Present</span>
             </li>
             <div class="experience-role">Undergraduate Research in ML</div>
             
@@ -47,7 +47,7 @@ title: Home
                     <span class="experience-indicator nasa"></span>
                     <span>NASA SUITS</span>
                 </div>
-                <span class="experience-year">2025</span>
+                <span class="experience-year">August 2025 - Oct 2025</span>
             </li>
             <div class="experience-role">Machine Learning/AI Engineer</div>
         </ul>
