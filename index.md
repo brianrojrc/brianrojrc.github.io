@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<div class="contact-email">[firstname][lastname]2004@gmail.com</div>
+<div class="contact-email">brianroj [at] pm [dot] me
 
 ## About
 
