@@ -1,4 +1,4 @@
-<!-- In _includes/header.html -->
+<!-- _includes/header.html -->
 <header>
   <nav>
     <div class="nav-container">
@@ -7,8 +7,7 @@
       <ul class="nav-links">
         {% for item in site.navigation %}
           <li>
-            <a href="{{ item.link | relative_url }}"
-               class="{% if page.url == item.link %}active{% endif %}">
+            <a href="{{ item.link | relative_url }}" class="{% if page.url == item.link %}active{% endif %}">
               {{ item.name }}
             </a>
           </li>
@@ -21,7 +20,7 @@
               aria-expanded="false"
               onclick="toggleMobileMenu(this)">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-             xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+             xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path d="M3 12H21M3 6H21M3 18H21"
                 stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round"/>
@@ -33,8 +32,7 @@
       <ul class="mobile-nav-links">
         {% for item in site.navigation %}
           <li>
-            <a href="{{ item.link | relative_url }}"
-               class="{% if page.url == item.link %}active{% endif %}">
+            <a href="{{ item.link | relative_url }}" class="{% if page.url == item.link %}active{% endif %}">
               {{ item.name }}
             </a>
           </li>
@@ -47,15 +45,39 @@
     function toggleMobileMenu(btn) {
       var m = document.getElementById('mobileMenu');
       if (!m) return;
-      var isOpen = m.hasAttribute('hidden') ? false : true;
-      if (isOpen) {
+      var open = !m.hasAttribute('hidden');
+      if (open) {
         m.setAttribute('hidden', '');
-        btn && btn.setAttribute('aria-expanded', 'false');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
       } else {
         m.removeAttribute('hidden');
-        btn && btn.setAttribute('aria-expanded', 'true');
+        if (btn) btn.setAttribute('aria-expanded', 'true');
       }
+      adjustContainerTopPadding();
     }
+
+    function adjustContainerTopPadding() {
+      var nav = document.querySelector('header nav');
+      if (!nav) return;
+      var h = nav.offsetHeight || 0;
+      // add a small buffer so content never kisses the border
+      var topPad = (h + 16) + 'px';
+      var containers = document.querySelectorAll('.container');
+      containers.forEach(function(el) {
+        el.style.paddingTop = topPad;
+      });
+    }
+
+    // Run on load and whenever the viewport or fonts change size
+    window.addEventListener('load', adjustContainerTopPadding);
+    window.addEventListener('resize', adjustContainerTopPadding);
+    // Some mobile browsers change the viewport height on scroll; debounce a bit
+    var _rt;
+    window.addEventListener('orientationchange', function() {
+      clearTimeout(_rt); _rt = setTimeout(adjustContainerTopPadding, 200);
+    });
+    // If your site title loads in a web font, adjust once it paints
+    document.fonts && document.fonts.ready && document.fonts.ready.then(adjustContainerTopPadding);
   </script>
 </header>
 
