@@ -5,33 +5,24 @@ title: Home
 
 <div class="contact-email">[firstname][lastname]2004@gmail.com</div>
 
-## Goals
+## About
 
-My career goal is to build machines that improve exponentially 📈.
+I'm an EE & CS + Math student at UCF specializing in machine learning for quantitative finance. I'm drawn to the intersection of deep learning and trading systems—where predictive modeling meets real-time constraints and market dynamics.
 
-## Work Experience
+I approach quantitative trading as a research problem first. Markets generate torrents of noisy data with constantly shifting regimes, and building models that can adapt to structural changes while operating at ultra-low latency is what drives me.
 
-<div class="work-item">
-  <div class="work-header">
-    <span class="work-date">August 2025 - Present</span> Undergraduate Research in ML, University of Central Florida
-  </div>
-</div>
+Currently working as an ML undergrad researcher at UCF, focusing on neural network architectures for financial time series and exploring how our own trading actions create feedback loops in the data we're trying to model.
 
-<div class="work-item">
-  <div class="work-header">
-    <span class="work-date">August 2025 - Oct 2025</span> Machine Learning/AI Engineer, NASA SUITS
-  </div>
-</div>
+## What I'm Working On
 
-I'm an EE & CS + Math student at UCF. I have a strong background in quantitative finance, machine learning, and hardware security. I enjoy building algorithmic models and do ML research. I'm equally drawn to pure mathematics and physics.
+**Deep Learning for Trading Strategies**  
+Developing neural network models for predictive modeling in financial markets. Working on architectures that can handle regime changes—structural shifts from elections, regulations, and market sentiment.
 
-I'm currently working as a ML undergrad researcher at UCF.
+**Ultra-Low Latency ML Infrastructure**  
+Building systems that can process market data torrents in real-time. The challenge: making inference fast enough for live trading while maintaining model accuracy.
 
-## Contact
-
-1. [Email ↗](#)
-2. [LinkedIn ↗](#)
-3. [Blog ↗](#)
+**Regime Detection & Distribution Learning**  
+Researching methods to identify distinct market distributions and adapt models accordingly. Markets are "regime-y" and recognizing these shifts is crucial for robust prediction.
 
 ## Experience
 
@@ -45,11 +36,17 @@ Machine Learning/AI Engineer
 
 ## Projects
 
-**iOS PAC Bypass Research**  
-Researching to bypass PAC in iOS kernel exploitation.
-
-**Volatility Forecasting**  
-Machine learning system for forecasting volatility surfaces in options markets.
+**Volatility Surface Forecasting**  
+Neural network system for modeling and forecasting volatility surfaces in options markets. Handles high-dimensional option data and learns complex surface dynamics across strikes and expirations.
 
 **Low-Latency Trading Infrastructure**  
-High-performance trading system built in Rust and C++ for order execution.
+High-performance order execution system built in Rust and C++ with microsecond-level latency. Designed for processing market data streams and executing strategies in real-time.
+
+**iOS PAC Bypass Research**  
+Security research exploring pointer authentication codes in iOS kernel exploitation. Investigating memory safety mechanisms and potential vulnerabilities.
+
+## Goals
+
+Build machine learning systems that can model and predict complex market dynamics. I'm particularly interested in solving problems where data is noisy, regimes shift frequently, and the models themselves influence what they're trying to predict.
+
+Think of it as building a research lab's worth of innovation with a trading desk's operational constraints.
