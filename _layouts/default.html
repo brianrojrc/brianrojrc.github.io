@@ -1,68 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if page.title %}{{ page.title }} - Brian Rojas{% else %}Brian Rojas{% endif %}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    {% if page.title %}
+      {{ page.title }} · Brian Rojas
+    {% else %}
+      Brian Rojas
+    {% endif %}
+  </title>
+
+  {% seo %}
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="icon" href="{{ '/assets/favicon.ico' | relative_url }}">
 </head>
+
 <body>
-    <!-- Header -->
-    <header class="site-header">
-        <div class="header-container">
-            <a href="{{ '/' | relative_url }}" class="site-title">Brian Rojas</a>
-            <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <nav class="site-nav" id="siteNav">
-                <a href="{{ '/' | relative_url }}" class="nav-link">Home</a>
-                <a href="{{ '/about' | relative_url }}" class="nav-link">About</a>
-                <a href="{{ '/projects' | relative_url }}" class="nav-link">Projects</a>
-                <a href="{{ '/research' | relative_url }}" class="nav-link">Research</a>
-                <a href="{{ '/blog' | relative_url }}" class="nav-link">Blog</a>
-                <a href="{{ '/contact' | relative_url }}" class="nav-link">Contact</a>
-            </nav>
-        </div>
-    </header>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="wrapper">
+      <a href="{{ '/' | relative_url }}" class="site-title">Brian Rojas</a>
+      <nav class="site-nav">
+        {% for item in site.navigation %}
+          <a href="{{ item.link | relative_url }}" class="nav-link">{{ item.name }}</a>
+        {% endfor %}
+      </nav>
+    </div>
+  </header>
 
-    <!-- Main Content -->
-    <main>
-  <div class="container markdown-body">
-    {{ content | markdownify }}
-    
-    <footer>
-      <p>© 2025 Brian Rojas. Built with Jekyll, hosted on GitHub Pages.</p>
-    </footer>
-  </div>
-</main>
+  <!-- Main content -->
+  <main class="site-main">
+    <div class="wrapper markdown-body">
+      {{ content | markdownify }}
+    </div>
+  </main>
 
-    <!-- Scripts -->
-    <script>
-        // Mobile Menu Toggle
-        document.addEventListener('DOMContentLoaded', function() {
-            const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-            const siteNav = document.getElementById('siteNav');
-            
-            if (mobileMenuToggle && siteNav) {
-                mobileMenuToggle.addEventListener('click', function() {
-                    this.classList.toggle('active');
-                    siteNav.classList.toggle('active');
-                });
-                
-                // Close menu when clicking outside
-                document.addEventListener('click', function(event) {
-                    const isClickInsideNav = siteNav.contains(event.target);
-                    const isClickOnToggle = mobileMenuToggle.contains(event.target);
-                    
-                    if (!isClickInsideNav && !isClickOnToggle && siteNav.classList.contains('active')) {
-                        mobileMenuToggle.classList.remove('active');
-                        siteNav.classList.remove('active');
-                    }
-                });
-            }
-        });
-    </script>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p>© 2025 Brian Rojas. Built with Jekyll & hosted on GitHub Pages.</p>
+    </div>
+  </footer>
 </body>
 </html>
+
