@@ -4,21 +4,22 @@ title: Blog
 ---
 
 <header class="page-header">
-    <span class="page-marker">[1]</span>
     <h1>Blog</h1>
-    <p class="intro">My thoughts on academica and life.</p>
+    <p class="intro">My thoughts on academia and life.</p>
 </header>
 
-<div class="blog-list">
+<section class="blog-list">
     {% for post in site.posts %}
     <article class="blog-post-item">
-        <div class="post-meta">{{ post.date | date: "%B %Y" }}</div>
-        <h2 class="post-title">
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        </h2>
+        <div class="item-header">
+            <div class="item-title">
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </div>
+            <div class="item-date">{{ post.date | date: "%B %Y" }}</div>
+        </div>
         {% if post.excerpt %}
-        <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 180 }}</p>
+        <p class="item-description">{{ post.excerpt | strip_html | truncate: 180 }}</p>
         {% endif %}
     </article>
     {% endfor %}
-</div>
+</section>
