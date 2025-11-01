@@ -294,3 +294,63 @@ footer {
         scroll-behavior: auto !important;
     }
 }
+
+// Markdown rendering enhancements
+.markdown-body {
+  line-height: 1.75;
+  font-size: 1rem;
+
+  h1, h2, h3, h4 {
+    margin-top: $spacing-2xl;
+    margin-bottom: $spacing-md;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    margin-bottom: $spacing-md;
+  }
+
+  ul, ol {
+    margin: $spacing-md 0 $spacing-md $spacing-lg;
+    padding-left: $spacing-md;
+    list-style: disc;
+
+    li {
+      margin-bottom: $spacing-sm;
+    }
+  }
+
+  strong {
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  a {
+    color: var(--link-color);
+    text-decoration: underline;
+
+    &:hover {
+      color: var(--link-hover);
+    }
+  }
+
+  .contact-email {
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: $spacing-lg;
+    display: inline-block;
+  }
+}
