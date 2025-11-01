@@ -15,10 +15,13 @@
 
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="icon" href="{{ '/assets/favicon.ico' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!-- Header -->
+  <!-- ================= Header ================= -->
   <header class="site-header">
     <div class="wrapper">
       <a href="{{ '/' | relative_url }}" class="site-title">Brian Rojas</a>
@@ -30,17 +33,17 @@
     </div>
   </header>
 
-  <!-- Main content -->
+  <!-- ================= Main Content ================= -->
   <main class="site-main">
     <div class="wrapper markdown-body">
       {{ content | markdownify }}
     </div>
   </main>
 
-  <!-- Footer -->
+  <!-- ================= Footer ================= -->
   <footer class="site-footer">
     <div class="wrapper">
-      <p>© 2025 Brian Rojas. Built with Jekyll & hosted on GitHub Pages.</p>
+      <p>© {{ site.time | date: '%Y' }} Brian Rojas · Built with <a href="https://jekyllrb.com/">Jekyll</a> & hosted on GitHub Pages.</p>
     </div>
   </footer>
 </body>
