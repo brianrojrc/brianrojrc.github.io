@@ -4,13 +4,11 @@ title: Contact
 ---
 
 <header class="page-header">
-    <span class="page-marker">[1]</span>
     <h1>Contact</h1>
     <p class="intro">Feel free to reach out.</p>
 </header>
 
 <section class="contact-section-simple">
-    <span class="section-marker">[2]</span>
     <h2>Get In Touch</h2>
     
     <ul class="contact-list-simple">
@@ -33,10 +31,6 @@ title: Contact
             <div class="contact-info">
                 <span class="contact-label">Location</span>
                 <span class="contact-detail">Orlando, Florida</span>
-            </div>
-        </li>
-    </ul>
-</section>
             </div>
         </li>
     </ul>
