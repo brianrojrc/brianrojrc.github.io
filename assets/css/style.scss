@@ -297,10 +297,15 @@ p {
     color: var(--accent-color);
 }
 
-.item-date {
-    font-size: 14px;
-    color: var(--text-tertiary);
-    white-space: nowrap;
+.item-description {
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.work-item:hover .item-description,
+.project-item:hover .item-description {
+    color: var(--text-secondary);
 }
 
 .item-subtitle {
@@ -309,10 +314,20 @@ p {
     margin-bottom: 12px;
 }
 
-.item-description {
+.work-item:hover .item-subtitle,
+.project-item:hover .item-subtitle {
     color: var(--text-secondary);
-    font-size: 15px;
-    line-height: 1.7;
+}
+
+.item-date {
+    font-size: 14px;
+    color: var(--text-tertiary);
+    white-space: nowrap;
+}
+
+.work-item:hover .item-date,
+.project-item:hover .item-date {
+    color: var(--text-tertiary);
 }
 
 /* Links */
