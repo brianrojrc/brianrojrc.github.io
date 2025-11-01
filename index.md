@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<div class="contact-email">brianroj [at] pm [dot] me
+<div class="contact-email"> brianroj [at] pm [dot] me
 
 ## About
 
