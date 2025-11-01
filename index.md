@@ -70,7 +70,7 @@ title: Home
     
     <div class="work-item">
         <div class="item-header">
-            <div class="item-title">B.S. Computer Engineering with Mathematics Minor</div>
+            <div class="item-title">B.Sc. Computer Engineering with Mathematics Minor</div>
             <div class="item-date">2025 – 2027</div>
         </div>
         <div class="item-subtitle">University of Central Florida</div>
