@@ -17,12 +17,12 @@
                 <span></span>
             </button>
             <nav class="site-nav" id="siteNav">
-                <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a>
-                <a href="{{ '/about' | relative_url }}" class="nav-link {% if page.url contains 'about' %}active{% endif %}">About</a>
-                <a href="{{ '/projects' | relative_url }}" class="nav-link {% if page.url contains 'projects' %}active{% endif %}">Projects</a>
-                <a href="{{ '/research' | relative_url }}" class="nav-link {% if page.url contains 'research' %}active{% endif %}">Research</a>
-                <a href="{{ '/blog' | relative_url }}" class="nav-link {% if page.url contains 'blog' or page.url contains 'posts' %}active{% endif %}">Blog</a>
-                <a href="{{ '/contact' | relative_url }}" class="nav-link {% if page.url contains 'contact' %}active{% endif %}">Contact</a>
+                <a href="{{ '/' | relative_url }}" class="nav-link">Home</a>
+                <a href="{{ '/about' | relative_url }}" class="nav-link">About</a>
+                <a href="{{ '/projects' | relative_url }}" class="nav-link">Projects</a>
+                <a href="{{ '/research' | relative_url }}" class="nav-link">Research</a>
+                <a href="{{ '/blog' | relative_url }}" class="nav-link">Blog</a>
+                <a href="{{ '/contact' | relative_url }}" class="nav-link">Contact</a>
             </nav>
         </div>
     </header>
@@ -33,7 +33,7 @@
             {{ content }}
             
             <footer>
-                <p>© 2025 Brian Rojas. Built with Jekyll, hosted on GitHub Pages I'm not a web dev btw.</p>
+                <p>© 2025 Brian Rojas. Built with Jekyll, hosted on GitHub Pages.</p>
             </footer>
         </div>
     </main>
