@@ -75,11 +75,11 @@ title: Home
         </div>
         <div class="item-subtitle">University of Central Florida</div>
     </div>
-    <h2>Education</h2>
+    
     <div class="work-item">
         <div class="item-header">
-            <div class="item-title">A.A. Engineering </div>
-            <div class="item-date">2025 – 2027</div>
+            <div class="item-title">A.A. Engineering</div>
+            <div class="item-date">2022 – 2025</div>
         </div>
         <div class="item-subtitle">Indian River State College</div>
     </div>
