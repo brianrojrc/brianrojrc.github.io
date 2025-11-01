@@ -49,7 +49,7 @@ title: Home
     <div class="work-item">
         <div class="item-header">
             <div class="item-title">Undergraduate Research Assistant</div>
-            <div class="item-date">2025 – Present</div>
+            <div class="item-date">Sept 2025 – Present</div>
         </div>
         <div class="item-subtitle">University of Central Florida</div>
         <p class="item-description">Collaborated on low latency ML pipelines using PyTorch → ONNX → TensorRT, processing high-frequency order book data for real time volatility regime sentiment changes.</p>
@@ -61,7 +61,7 @@ title: Home
             <div class="item-date">Aug 2025 – Oct 2025</div>
         </div>
         <div class="item-subtitle">NASA SUITS</div>
-        <p class="item-description">Engineered a local, offline AI chat assistant for EVA spacesuits for lunar missions, enabling astronauts to query oxygen levels and repair procedures mid spacewalk without ground comms. Tested in simulated HIVE environments.</p>
+        <p class="item-description">Collaborated in designing a local offline AI assistant for EVA spacesuits for lunar missions, enabling astronauts to query oxygen levels and repair procedures mid spacewalk without ground comms. Tested in simulated HIVE environments.</p>
     </div>
 </section>
 
