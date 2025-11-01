@@ -3,7 +3,11 @@ layout: default
 title: Home
 ---
 
-<div class="contact-email"> brianroj [at] pm [dot] me
+<div class="contact-email">brianroj [at] pm [dot] me</div>
+
+## About
+I'm an EE & CS + Math student at UCF specializing in machine learning for quantitative finance. I'm drawn to the intersection of deep learning and trading systems—where predictive modeling meets real-time constraints and market dynamics.
+
 
 ## About
 
