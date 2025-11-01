@@ -10,8 +10,8 @@ title: Home
 
 <section id="about">
     <h2>About</h2>
-    <p>I'm an Electrical Engineering & CS + Math student at <a href="https://www.ucf.edu/" target="_blank" style="color: var(--accent-color); font-weight: 600;">UCF</a> with an interest in machine learning, quant finace robotics. I'm drawn to the intersection of deep learning and trading systems, also the intersection between physics and the financial markets.</p>
-    <p>My interests are machine learning, quantitative finance, physics, iOS security research, nutrition. I currently work as an ML undergrad researcher at UCF, focusing on building and training neural network models.</p>
+    <p>I'm an Electrical Engineering & CS + Math student at <a href="https://www.ucf.edu/" target="_blank" style="color: var(--accent-color); font-weight: 600;">UCF</a> with an interest in machine learning, quant finace, and robotics. I'm drawn to volatility trading and modeling and the intersection between physics and the financial markets.</p>
+    <p>My interests outsdie of my studies are iOS security research, nutrition and philosophy. I currently work as an ML undergrad researcher at UCF, focusing on building and training neural network models.</p>
 </section>
 
 <section id="projects">
