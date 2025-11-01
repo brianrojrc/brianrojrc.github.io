@@ -263,12 +263,12 @@ p {
     margin-bottom: 40px;
     padding-left: 0;
     opacity: 1;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .work-item:hover,
 .project-item:hover {
-    transform: translateX(8px);
+    transform: translateX(4px);
 }
 
 .work-item:last-child,
@@ -460,7 +460,7 @@ strong {
 }
 
 .contact-item-simple:hover {
-    transform: translateX(8px);
+    transform: translateX(4px);
 }
 
 .item-number {
@@ -523,7 +523,7 @@ strong {
 }
 
 .project-item-detailed:hover {
-    transform: translateX(8px);
+    transform: translateX(4px);
 }
 
 .project-header {
@@ -600,7 +600,7 @@ strong {
 }
 
 .research-item:hover {
-    transform: translateX(8px);
+    transform: translateX(4px);
 }
 
 .research-header {
