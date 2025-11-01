@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>
     {% if page.title %}
       {{ page.title }} · Brian Rojas
@@ -15,14 +17,25 @@
 
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="icon" href="{{ '/assets/favicon.ico' | relative_url }}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- MathJax v3 (optional; safe to keep even if unused) -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']],
+        packages: ['base', 'ams', 'mathtools'],
+        macros: { argmin:'\\mathop{\\mathrm{arg\\,min}}', argmax:'\\mathop{\\mathrm{arg\\,max}}', E:'\\mathbb{E}', Var:'\\mathrm{Var}' }
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
 
 <body>
-  <!-- ================= Header ================= -->
-  <header class="site-header">
+  <!-- Header -->
+  <header class="site-header" role="banner">
     <div class="wrapper">
       <a href="{{ '/' | relative_url }}" class="site-title">Brian Rojas</a>
       <nav class="site-nav">
@@ -33,14 +46,14 @@
     </div>
   </header>
 
-  <!-- ================= Main Content ================= -->
+  <!-- Main -->
   <main class="site-main">
     <div class="wrapper markdown-body">
       {{ content | markdownify }}
     </div>
   </main>
 
-  <!-- ================= Footer ================= -->
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="wrapper">
       <p>© {{ site.time | date: '%Y' }} Brian Rojas · Built with <a href="https://jekyllrb.com/">Jekyll</a> & hosted on GitHub Pages.</p>
@@ -48,4 +61,3 @@
   </footer>
 </body>
 </html>
-
