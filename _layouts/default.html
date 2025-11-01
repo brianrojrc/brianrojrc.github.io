@@ -7,33 +7,28 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-    <!-- Mathematical Background - MUST BE FIRST -->
-    <div class="math-background" id="mathBackground"></div>
-
-    <!-- Mobile Menu Toggle -->
-    <button class="mobile-menu-toggle" id="mobileMenuToggle">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-
-    <!-- Sidebar Navigation -->
-    <nav class="sidebar-nav" id="sidebarNav">
-        <div class="nav-header">
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
             <a href="{{ '/' | relative_url }}" class="site-title">Brian Rojas</a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="site-nav" id="siteNav">
+                <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a>
+                <a href="{{ '/about' | relative_url }}" class="nav-link {% if page.url contains 'about' %}active{% endif %}">About</a>
+                <a href="{{ '/projects' | relative_url }}" class="nav-link {% if page.url contains 'projects' %}active{% endif %}">Projects</a>
+                <a href="{{ '/research' | relative_url }}" class="nav-link {% if page.url contains 'research' %}active{% endif %}">Research</a>
+                <a href="{{ '/blog' | relative_url }}" class="nav-link {% if page.url contains 'blog' or page.url contains 'posts' %}active{% endif %}">Blog</a>
+                <a href="{{ '/contact' | relative_url }}" class="nav-link {% if page.url contains 'contact' %}active{% endif %}">Contact</a>
+            </nav>
         </div>
-        <ul class="nav-links">
-            <li><a href="{{ '/' | relative_url }}" {% if page.url == "/" %}class="active"{% endif %}>Home</a></li>
-            <li><a href="{{ '/about' | relative_url }}" {% if page.url contains 'about' %}class="active"{% endif %}>About</a></li>
-            <li><a href="{{ '/projects' | relative_url }}" {% if page.url contains 'projects' %}class="active"{% endif %}>Projects</a></li>
-            <li><a href="{{ '/research' | relative_url }}" {% if page.url contains 'research' %}class="active"{% endif %}>Research</a></li>
-            <li><a href="{{ '/blog' | relative_url }}" {% if page.url contains 'blog' or page.url contains 'posts' %}class="active"{% endif %}>Blog</a></li>
-            <li><a href="{{ '/contact' | relative_url }}" {% if page.url contains 'contact' %}class="active"{% endif %}>Contact</a></li>
-        </ul>
-    </nav>
+    </header>
 
     <!-- Main Content -->
-    <main class="main-content">
+    <main>
         <div class="container">
             {{ content }}
             
@@ -48,105 +43,26 @@
         // Mobile Menu Toggle
         document.addEventListener('DOMContentLoaded', function() {
             const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-            const sidebarNav = document.getElementById('sidebarNav');
+            const siteNav = document.getElementById('siteNav');
             
-            if (mobileMenuToggle && sidebarNav) {
+            if (mobileMenuToggle && siteNav) {
                 mobileMenuToggle.addEventListener('click', function() {
                     this.classList.toggle('active');
-                    sidebarNav.classList.toggle('active');
+                    siteNav.classList.toggle('active');
                 });
                 
                 // Close menu when clicking outside
                 document.addEventListener('click', function(event) {
-                    const isClickInsideNav = sidebarNav.contains(event.target);
+                    const isClickInsideNav = siteNav.contains(event.target);
                     const isClickOnToggle = mobileMenuToggle.contains(event.target);
                     
-                    if (!isClickInsideNav && !isClickOnToggle && sidebarNav.classList.contains('active')) {
+                    if (!isClickInsideNav && !isClickOnToggle && siteNav.classList.contains('active')) {
                         mobileMenuToggle.classList.remove('active');
-                        sidebarNav.classList.remove('active');
+                        siteNav.classList.remove('active');
                     }
-                });
-                
-                // Close menu when clicking a link
-                const navLinks = sidebarNav.querySelectorAll('a');
-                navLinks.forEach(link => {
-                    link.addEventListener('click', function() {
-                        mobileMenuToggle.classList.remove('active');
-                        sidebarNav.classList.remove('active');
-                    });
                 });
             }
         });
-
-        // Mathematical Background Generator
-        const equations = [
-            '∂V/∂t', '∂²V/∂S²', '∂V/∂S', '∂f/∂x', '∂²f/∂x∂y', '∇f',
-            'Δ', 'Γ', 'θ', 'ν', 'ρ', 'α', 'β', 'γ', 'λ', 'σ', 'μ',
-            'σ²', 'σᵢₘₚₗᵢₑd', 'σₗₒcₐₗ', 'dW',
-            '∇θJ', '∂L/∂W', 'η∇J', 'ReLU(x)',
-            'dS = μdt + σdW', 'E[dW²] = dt',
-            '∫', '∑', '∂', '∇', 'Σ', 'Θ', 'Λ'
-        ];
-
-        let mouseX = 0;
-        let mouseY = 0;
-        const equationElements = [];
-
-        function createMathBackground() {
-            const container = document.getElementById('mathBackground');
-            if (!container) return;
-            
-            const numberOfEquations = 20;
-            
-            for (let i = 0; i < numberOfEquations; i++) {
-                const equation = document.createElement('div');
-                equation.className = 'math-equation';
-                equation.textContent = equations[Math.floor(Math.random() * equations.length)];
-                
-                const sizes = ['small', 'medium', 'large'];
-                equation.classList.add(sizes[Math.floor(Math.random() * sizes.length)]);
-                
-                const baseX = Math.random() * 100;
-                const baseY = Math.random() * 100;
-                
-                equationElements.push({
-                    element: equation,
-                    baseX: baseX,
-                    baseY: baseY,
-                    depth: 0.5 + Math.random() * 1.5
-                });
-                
-                container.appendChild(equation);
-            }
-            
-            startMouseTracking();
-        }
-
-        function startMouseTracking() {
-            document.addEventListener('mousemove', (e) => {
-                mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
-                mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
-            });
-            
-            function animate() {
-                equationElements.forEach((eq) => {
-                    const offsetX = mouseX * eq.depth * 3;
-                    const offsetY = mouseY * eq.depth * 3;
-                    const newX = eq.baseX + offsetX;
-                    const newY = eq.baseY + offsetY;
-                    eq.element.style.left = newX + '%';
-                    eq.element.style.top = newY + '%';
-                });
-                requestAnimationFrame(animate);
-            }
-            animate();
-        }
-
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', createMathBackground);
-        } else {
-            createMathBackground();
-        }
     </script>
 </body>
 </html>
