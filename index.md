@@ -78,7 +78,7 @@ title: Home
     
     <div class="work-item">
         <div class="item-header">
-            <div class="item-title">A.A. Engineering</div>
+            <div class="item-title">A.A. Engineering & Finance</div>
             <div class="item-date">2022 – 2025</div>
         </div>
         <div class="item-subtitle">Indian River State College</div>
