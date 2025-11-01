@@ -37,3 +37,8 @@ exclude:
 sass:
   style: compressed
 
+markdown: kramdown
+highlighter: rouge
+
+rouge:
+  theme: github-dark
