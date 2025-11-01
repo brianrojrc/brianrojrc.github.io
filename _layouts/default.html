@@ -29,14 +29,14 @@
 
     <!-- Main Content -->
     <main>
-        <div class="container">
-            {{ content }}
-            
-            <footer>
-                <p>© 2025 Brian Rojas. Built with Jekyll, hosted on GitHub Pages.</p>
-            </footer>
-        </div>
-    </main>
+  <div class="container markdown-body">
+    {{ content | markdownify }}
+    
+    <footer>
+      <p>© 2025 Brian Rojas. Built with Jekyll, hosted on GitHub Pages.</p>
+    </footer>
+  </div>
+</main>
 
     <!-- Scripts -->
     <script>
