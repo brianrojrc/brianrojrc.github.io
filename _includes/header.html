@@ -1,37 +1,61 @@
 <!-- In _includes/header.html -->
 <header>
-    <div class="container">
-        <nav>
-            <div class="nav-left">
-                <a href="{{ '/' | relative_url }}" class="logo">{{ site.title }}</a>
-                <ul class="nav-links">
-                    {% for item in site.navigation %}
-                        <li>
-                            <a href="{{ item.link | relative_url }}" 
-                               class="nav-link {% if page.url == item.link %}active{% endif %}">
-                                {{ item.name }}
-                            </a>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </div>
-            <button class="mobile-menu-button" onclick="toggleMobileMenu()" aria-label="Toggle menu">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
-        </nav>
-        <div class="mobile-menu" id="mobileMenu">
-            <ul class="mobile-nav-links">
-                {% for item in site.navigation %}
-                    <li>
-                        <a href="{{ item.link | relative_url }}" 
-                           class="{% if page.url == item.link %}active{% endif %}">
-                            {{ item.name }}
-                        </a>
-                    </li>
-                {% endfor %}
-            </ul>
-        </div>
+  <nav>
+    <div class="nav-container">
+      <a href="{{ '/' | relative_url }}" class="nav-brand">{{ site.title }}</a>
+
+      <ul class="nav-links">
+        {% for item in site.navigation %}
+          <li>
+            <a href="{{ item.link | relative_url }}"
+               class="{% if page.url == item.link %}active{% endif %}">
+              {{ item.name }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <button class="mobile-menu-button"
+              aria-label="Toggle menu"
+              aria-controls="mobileMenu"
+              aria-expanded="false"
+              onclick="toggleMobileMenu(this)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+             xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <path d="M3 12H21M3 6H21M3 18H21"
+                stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
     </div>
+
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <ul class="mobile-nav-links">
+        {% for item in site.navigation %}
+          <li>
+            <a href="{{ item.link | relative_url }}"
+               class="{% if page.url == item.link %}active{% endif %}">
+              {{ item.name }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+
+  <script>
+    function toggleMobileMenu(btn) {
+      var m = document.getElementById('mobileMenu');
+      if (!m) return;
+      var isOpen = m.hasAttribute('hidden') ? false : true;
+      if (isOpen) {
+        m.setAttribute('hidden', '');
+        btn && btn.setAttribute('aria-expanded', 'false');
+      } else {
+        m.removeAttribute('hidden');
+        btn && btn.setAttribute('aria-expanded', 'true');
+      }
+    }
+  </script>
 </header>
+
