@@ -5,64 +5,82 @@ title: Home
 
 <div class="contact-email">brianroj [at] pm [dot] me</div>
 
-## About
+<header>
+    <h1 class="name">Brian Rojas</h1>
+</header>
 
-I'm an EE & CS + Math student at UCF specializing in machine learning for quantitative finance.  
-I'm drawn to the intersection of deep learning and trading systems—where predictive modeling meets real-time constraints and market dynamics.
+<section id="about">
+    <h2>About</h2>
+    <p>I'm an Electrical Engineering & CS + Math student at <a href="https://www.ucf.edu/" target="_blank" style="color: var(--accent-color); font-weight: 600;">UCF</a> specializing in machine learning for quantitative finance. I'm drawn to the intersection of deep learning and trading systems—where predictive modeling meets real-time constraints and market dynamics.</p>
+    <p>My interests are machine learning, quantitative finance, physics, IOS security research, nutrition. I currently work as an ML undergrad researcher at UCF, focusing on building and training neural network models.</p>
+</section>
 
-I approach quantitative trading as a research problem first and do it for fun.  
+<section id="projects">
+    <h2>Projects</h2>
+    
+    <div class="project-item">
+        <div class="item-title">Deep Learning for Trading Strategies</div>
+        <p class="item-description">Training GRU + HAR + GARCH-residual models on SPY/QQQ realized variance, order book imbalance, and kurtosis to predict day volatility.</p>
+    </div>
 
-Currently working as an ML undergrad researcher at UCF, focusing on building and training neural network models.
+    <div class="project-item">
+        <div class="item-title">Ultra-Low Latency ML Infrastructure</div>
+        <p class="item-description">Deploying PyTorch → ONNX → TensorRT inference on a $200 VPS, processing L2 order flow and SEC EDGAR sentiment, position sizing and SPX option timing signals.</p>
+    </div>
 
----
+    <div class="project-item">
+        <div class="item-title">Volatility Surface Forecasting</div>
+        <p class="item-description">Neural network system for modeling and forecasting volatility surfaces in options markets.
+    </div>
 
-## What I'm Working On
+    <div class="project-item">
+        <div class="item-title">Low-Latency Trading Infrastructure</div>
+        <p class="item-description">Order execution system built in Rust and C++ with low latency.</p>
+    </div>
 
-**Deep Learning for Trading Strategies**  
-Training GRU + HAR + GARCH-residual models on 1-minute SPY/QQQ realized variance, order book imbalance, and kurtosis to predict 1–22 day volatility — achieving 17% lower RMSE vs. GJR-GARCH in purged walk-forward validation.
+    <div class="project-item">
+        <div class="item-title">iOS PAC Bypass Research</div>
+        <p class="item-description">Security research exploring pointer authentication codes in iOS kernel exploitation.</p>
+    </div>
+</section>
 
-**Ultra-Low Latency ML Infrastructure**  
-Deploying PyTorch → ONNX → TensorRT inference on a $200 VPS, processing L2 order flow and SEC EDGAR sentiment in <40ms — powering live vol-targeted position sizing and SPX option timing signals.
+<section id="experience">
+    <h2>Experience</h2>
 
----
+    <div class="work-item">
+        <div class="item-header">
+            <div class="item-title">Undergraduate Research Assistant</div>
+            <div class="item-date">2025 – Present</div>
+        </div>
+        <div class="item-subtitle">University of Central Florida</div>
+        <p class="item-description">Collaborated on low latency ML pipelines using PyTorch → ONNX → TensorRT, processing high-frequency order book data for real time volatility regime sentiment changes.</p>
+    </div>
 
-## Experience
+    <div class="work-item">
+        <div class="item-header">
+            <div class="item-title">Machine Learning Engineer</div>
+            <div class="item-date">Aug 2025 – Oct 2025</div>
+        </div>
+        <div class="item-subtitle">NASA SUITS</div>
+        <p class="item-description">Engineered a local, offline AI chat assistant for EVA spacesuits for lunar missions, enabling astronauts to query oxygen levels and repair procedures mid spacewalk without ground comms. Tested in simulated HIVE environments.</p>
+    </div>
+</section>
 
-**University of Central Florida**  
-Orlando, FL  
-August 2025 – Present  
-Undergraduate Research Assistant  
-  
-Collaborated on low-latency ML pipelines using PyTorch → ONNX → TensorRT, processing highfrequency order book data for real-time volatility regime detection.  
-
-**NASA SUITS**  
-Houston, TX (Virtual Collaboration with SpaceX Integration)  
-August 2025 – October 2025  
-Machine Learning Engineer  
-
-Engineered a local, offline AI chat assistant for EVA spacesuits during lunar missions, enabling astronauts to query oxygen levels and repair procedures mid-spacewalk without ground comms. 
-Tested in simulated HIVE environments, reducing query resolution time by 40% vs. manual checks.
-
----
-
-## Projects
-
-**Volatility Surface Forecasting**  
-Neural network system for modeling and forecasting volatility surfaces in options markets.  
-Handles high-dimensional option data and learns complex surface dynamics across strikes and expirations.
-
-**Low-Latency Trading Infrastructure**  
-High-performance order execution system built in Rust and C++ with microsecond-level latency.  
-Designed for processing market data streams and executing strategies in real time.
-
-**iOS PAC Bypass Research**  
-Security research exploring pointer authentication codes in iOS kernel exploitation.  
-Investigating memory safety mechanisms and potential vulnerabilities.
-
----
-
-## Goals
-
-Build RL-driven ML systems that predict market dynamics.  
-Run a solo lab fusing research and execution where turning data into alpha and autonomy.
-
+<section>
+    <h2>Education</h2>
+    <div class="work-item">
+        <div class="item-header">
+            <div class="item-title">B.S. Electrical Engineering & Computer Science and Mathematics Minor</div>
+            <div class="item-date">2025 – 2027</div>
+        </div>
+        <div class="item-subtitle">University of Central Florida</div>
+    </div>
+    <h2>Education</h2>
+    <div class="work-item">
+        <div class="item-header">
+            <div class="item-title">A.A. Engineering </div>
+            <div class="item-date">2025 – 2027</div>
+        </div>
+        <div class="item-subtitle">Indian River State College</div>
+    </div>
+</section>
