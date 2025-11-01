@@ -2,7 +2,6 @@
 layout: default
 title: Home
 ---
-
 <div class="contact-email">brianroj [at] pm [dot] me</div>
 
 <header>
@@ -11,9 +10,8 @@ title: Home
 
 <section id="about">
     <h2>About</h2>
-    <p>I'm an Electrical Engineering & CS + Math student at <a href="https://www.ucf.edu/" target="_blank" style="color: var(--accent-color); font-weight: 600;">UCF</a> specializing in machine learning for quantitative finance. I'm drawn to the intersection of deep learning and trading systems, also the intersection between physics and the finanical markets.</p>
-    <p>My interests are machine learning, quantitative finance, physics, IOS security research, nutrition. I currently work as an ML undergrad researcher at UCF, focusing on building and training neural network models.</p>
-    
+    <p>I'm an Electrical Engineering & CS + Math student at <a href="https://www.ucf.edu/" target="_blank" style="color: var(--accent-color); font-weight: 600;">UCF</a> specializing in machine learning for quantitative finance. I'm drawn to the intersection of deep learning and trading systems, also the intersection between physics and the financial markets.</p>
+    <p>My interests are machine learning, quantitative finance, physics, iOS security research, nutrition. I currently work as an ML undergrad researcher at UCF, focusing on building and training neural network models.</p>
 </section>
 
 <section id="projects">
@@ -31,7 +29,7 @@ title: Home
 
     <div class="project-item">
         <div class="item-title">Volatility Surface Forecasting</div>
-        <p class="item-description">Neural network system for modeling and forecasting volatility surfaces in options markets.
+        <p class="item-description">Neural network system for modeling and forecasting volatility surfaces in options markets.</p>
     </div>
 
     <div class="project-item">
@@ -43,6 +41,7 @@ title: Home
         <div class="item-title">iOS PAC Bypass Research</div>
         <p class="item-description">Security research exploring pointer authentication codes in iOS kernel exploitation.</p>
     </div>
+</section>
 
 <section id="experience">
     <h2>Experience</h2>
@@ -68,6 +67,7 @@ title: Home
 
 <section>
     <h2>Education</h2>
+    
     <div class="work-item">
         <div class="item-header">
             <div class="item-title">B.S. Computer Engineering with Mathematics Minor</div>
