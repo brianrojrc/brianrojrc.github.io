@@ -43,7 +43,6 @@ title: Home
         <div class="item-title">iOS PAC Bypass Research</div>
         <p class="item-description">Security research exploring pointer authentication codes in iOS kernel exploitation.</p>
     </div>
-</section>
 
 <section id="experience">
     <h2>Experience</h2>
