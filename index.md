@@ -13,6 +13,7 @@ title: Home
     <h2>About</h2>
     <p>I'm an Electrical Engineering & CS + Math student at <a href="https://www.ucf.edu/" target="_blank" style="color: var(--accent-color); font-weight: 600;">UCF</a> specializing in machine learning for quantitative finance. I'm drawn to the intersection of deep learning and trading systems—where predictive modeling meets real-time constraints and market dynamics.</p>
     <p>My interests are machine learning, quantitative finance, physics, IOS security research, nutrition. I currently work as an ML undergrad researcher at UCF, focusing on building and training neural network models.</p>
+    
 </section>
 
 <section id="projects">
