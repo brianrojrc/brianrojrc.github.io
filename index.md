@@ -49,13 +49,9 @@ title: Home
     
     <div class="project-item">
         <div class="item-title">ML-Enhanced Hierarchical Risk Parity</div>
-        <p class="item-description">Portfolio construction using Hierarchical Risk Parity with ML-forecasted covariance matrices. Replaces historical covariance estimates with predicted volatility and correlation from neural networks, improving out-of-sample Sharpe ratio by 0.4 over traditional mean-variance optimization.</p>
+        <p class="item-description">Portfolio construction using Hierarchical Risk Parity with forecasted covariance matrices.</p>
     </div>
    
-    <div class="project-item">
-        <div class="item-title">iOS PAC Bypass Research</div>
-        <p class="item-description">Security research exploring pointer authentication codes in iOS kernel exploitation. Investigating mitigation bypass techniques and memory corruption primitives on ARM64e architecture.</p>
-    </div>
 </section>
 
 <section id="education">
