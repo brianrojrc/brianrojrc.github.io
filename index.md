@@ -48,7 +48,6 @@ title: Home
             <div class="item-date">Sept 2025 – Present</div>
         </div>
         <div class="item-subtitle">University of Central Florida</div>
-        <img src="/assets/images/gnn-architecture.png" alt="Graph Neural Network Architecture" style="max-width: 100%; border-radius: 8px; margin: 15px 0;">
         <p class="item-description">Building graph neural network transformers pretrained on order book data and 1M+ contact graphs..</p>
     </div>
     
