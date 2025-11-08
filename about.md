@@ -11,41 +11,13 @@ title: About
 <section class="about-content">
     <h2>Background</h2>
     
-    <p>A little about me: I was born and raised in St. Lucie, Florida. After high school, I was accepted to Cornell University and FL state colleges, but due to financial constraints, led me to pursue my academic career at Indian River State College (IRSC) while helping support my family's businesses. After earning my AA, I was accepted to both UCF and UF, ultimately choosing UCF, where I'm currently pursuing a BS in Computer Engineering and a minor in Mathematics.</p>
+    <p>I was born and raised in St. Lucie, Florida. After high school, I received acceptances from Cornell University and several Florida state colleges, but financial constraints led me to pursue my education at Indian River State College (IRSC) while helping support my family's businesses. After earning my AA, I was accepted to both UCF and UF, ultimately choosing UCF, where I'm currently pursuing a BS in Computer Engineering with a minor in Mathematics.</p>  
+
+    <p>From a young age, I've been curious about everything from philosophy to medicine, but mathematics and engineering have always gravitated me the most. I spent learning in my teens how Apple's operating systems work, diving into both hardware and software, eventually my curiosity evolved into security research during high school, where I learned about system vulnerabilities. In my early college years, I was introduced to the financial markets particulary into derivatvies and volatility, this pushed me to learn machine learning to better understand market behavior. I initially majored in finance at IRSC, but after conversations with professionals like Agustín LeBron, a former trader at Jane Street, and Kris Sidal, a portfolio manager at Ambrus Group, I realized that while I was fascinated by financial applications, I needed to pursue engineering. Switching majors set me back two years, but it was the right decision for my long term goals.</p> 
     
-    <p>From a young age, I've been curious about learning everything from philosophy to medicine, but mathematics and engineering is what I was passionate the most. I spent years exploring how Apple's operating systems worked, diving into both hardware and software, which led me into security research. In my early college years, I became fascinated by financial markets, particularly volatility and derivatives. This interest pushed me to learn machine learning. I started out majoring in finance at IRSC, but after talking with professionals like Agustín LeBron (a former trader at Jane Street) and Kris Sidal (a portfolio manager at Ambrus Group), I realized I needed to pursue what I'd always been passionate about: engineering. Switching majors set me back two years, but it was the right choice for my long term goals.</p>
-    
-    <p>Before transferring to UCF, I had the privilege of studying under Dr. Zheng, my physics professor at IRSC. His unique teaching style and mentorship impacted me, introducing advanced methods that reshaped how I approach solving problems and deepened my passion for math and physics.</p>
-    
-    <p>Outside of my studies, I tutor students in STEM subjects, participate in a run club, explore thrift stores and museums, and enjoy cooking steak while listening to philosophy debates and nutrition podcasts.</p>
+    <p>Before transferring to UCF, I had the privilege of studying under Dr. Zheng, my physics professor at IRSC. His teaching impacted me, introducing methods that reshaped how I approach problem solving and deepened my passion for mathematics and physics.</p> 
+
+    <p>Currently, I conduct undergraduate research in machine learning at UCF. For the upcoming year I plan to intern at a robotics company, and I'm working toward pursuing an MS in Electrical Engineering at Stanford University. Outside my studies, I tutor students in STEM subjects as a Kumon math coach, participate in my local run club, explore thrift stores and museums, and enjoy cooking steak while listening to philosophy debates and nutrition podcasts.</p>
 </section>
 
-<section class="journey-section">
-    <h2>My Journey</h2>
-    
-    <div class="timeline-container">
-        <div class="timeline-item">
-            <div class="timeline-year">Teens</div>
-            <h3>Early Start</h3>
-            <p>Began iOS development, diving deep into iOS security.</p>
-        </div>
-        
-        <div class="timeline-item">
-            <div class="timeline-year">Late Teens</div>
-            <h3>Pivot</h3>
-            <p>Transitioned to learn financial markets and the derivatives market. I successfully managed my previous college's portfolio using statistical arbitrage and volatility modeling. Started tutoring for STEM students.</p>
-        </div>
-        
-        <div class="timeline-item">
-            <div class="timeline-year">College</div>
-            <h3>The Shift</h3>
-            <p>Started college with a major in Finance. I transitioned to Engineering at the end of my sophomore year to pursue a more mathematically rigorous curriculum.</p>
-        </div>
-        
-        <div class="timeline-item">
-            <div class="timeline-year">Present</div>
-            <h3>Current Focus</h3>
-            <p>Pursuing a BS in Computer Engineering and Mathematics at UCF working at NASA and Undergrad Researcher in ML at UCF. I have plans to pursue an MS in Electrical Engineering at Stanford University.</p>
-        </div>
-    </div>
 </section>
