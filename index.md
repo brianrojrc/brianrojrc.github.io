@@ -2,7 +2,6 @@
 layout: default
 title: Home
 ---
-<div class="contact-email">brianroj [at] pm [dot] me</div>
 
 <header>
     <h1 class="name">Brian Rojas</h1>
@@ -10,8 +9,30 @@ title: Home
 
 <section id="about">
     <h2>About</h2>
-    <p>I'm an Electrical Engineering & CS + Math student at <a href="https://www.ucf.edu/" target="_blank" style="color: var(--accent-color); font-weight: 600;">UCF</a> with an interest in machine learning, quantitative finance, and robotics. I'm particularly drawn to intersection of physics and financial markets.</p>
-    <p>Outside academics, I explore iOS security research, nutrition, and philosophy. I currently work as an ML undergraduate researcher at UCF, prev @ NASA as a ML Engineer</p>
+    <p>I grew up in South Florida and currently study electrical engineering & cs + math at ucf. Reach me at brianroj (at) pm (dot) me.</p>
+
+</section>
+
+<section id="experience">
+    <h2>Experience</h2>
+    
+    <div class="work-item">
+        <div class="item-header">
+            <div class="item-title">Undergraduate Research Assistant</div>
+            <div class="item-date">Sept 2025 – Present</div>
+        </div>
+        <div class="item-subtitle">University of Central Florida</div>
+        <p class="item-description">Building graph neural network transformers pretrained on order book data and 1M+ contact graphs..</p>
+    </div>
+    
+    <div class="work-item">
+        <div class="item-header">
+            <div class="item-title">Machine Learning Engineer</div>
+            <div class="item-date">Aug 2025 – Oct 2025</div>
+        </div>
+        <div class="item-subtitle">NASA SUITS</div>
+        <p class="item-description">Architected a local offline AI assistant for EVA spacesuits on lunar missions using BitNet 1.58-bit quantized models and Model Context Protocol, with a multiagent system with Microsoft Speech SDK integration, Tested in a simulated HIVE environment.</p>
+    </div>
 </section>
 
 <section id="projects">
@@ -36,28 +57,6 @@ title: Home
     <div class="project-item">
         <div class="item-title">iOS PAC Bypass Research</div>
         <p class="item-description">Security research exploring pointer authentication codes in iOS kernel exploitation. Investigating mitigation bypass techniques and memory corruption primitives on ARM64e architecture.</p>
-    </div>
-</section>
-
-<section id="experience">
-    <h2>Experience</h2>
-    
-    <div class="work-item">
-        <div class="item-header">
-            <div class="item-title">Undergraduate Research Assistant</div>
-            <div class="item-date">Sept 2025 – Present</div>
-        </div>
-        <div class="item-subtitle">University of Central Florida</div>
-        <p class="item-description">Building graph neural network transformers pretrained on order book data and 1M+ contact graphs..</p>
-    </div>
-    
-    <div class="work-item">
-        <div class="item-header">
-            <div class="item-title">Machine Learning Engineer</div>
-            <div class="item-date">Aug 2025 – Oct 2025</div>
-        </div>
-        <div class="item-subtitle">NASA SUITS</div>
-        <p class="item-description">Architected a local offline AI assistant for EVA spacesuits on lunar missions using BitNet 1.58-bit quantized models and Model Context Protocol, with a multiagent system with Microsoft Speech SDK integration, Tested in a simulated HIVE environment.</p>
     </div>
 </section>
 
