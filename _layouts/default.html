@@ -7,28 +7,27 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-    <!-- Animated Background Squares -->
+  
     <div class="bg-decoration">
         <div class="square"></div>
         <div class="square"></div>
         <div class="square"></div>
     </div>
 
-    <!-- Top Navigation -->
     <nav>
         <div class="nav-container">
             <a href="{{ '/' | relative_url }}" class="nav-brand">Brian Rojas</a>
             <ul class="nav-links">
-                <li><a href="{{ '/' | relative_url }}#about" {% if page.url == "/" %}class="active"{% endif %}>About</a></li>
+                <li><a href="{{ '/' | relative_url }}" {% if page.url == "/" %}class="active"{% endif %}>Home</a></li>
+                <li><a href="{{ '/about' | relative_url }}" {% if page.url contains 'about' %}class="active"{% endif %}>About</a></li>
                 <li><a href="{{ '/projects' | relative_url }}" {% if page.url contains 'projects' %}class="active"{% endif %}>Projects</a></li>
-                <li><a href="{{ '/research' | relative_url }}" {% if page.url contains 'research' %}class="active"{% endif %}>Research</a></li>
                 <li><a href="{{ '/blog' | relative_url }}" {% if page.url contains 'blog' or page.url contains 'posts' %}class="active"{% endif %}>Blog</a></li>
                 <li><a href="{{ '/contact' | relative_url }}" {% if page.url contains 'contact' %}class="active"{% endif %}>Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Main Content -->
+   
     <main class="container">
         {{ content }}
         
@@ -37,9 +36,9 @@
         </footer>
     </main>
 
-    <!-- Scripts -->
+    
     <script>
-        // Smooth scroll for anchor links
+    
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
