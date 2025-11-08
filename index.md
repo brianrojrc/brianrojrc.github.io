@@ -38,12 +38,12 @@ title: Home
     
     <div class="project-item">
         <div class="item-title">Volatility Surface Forecasting with ConvLSTM</div>
-        <p class="item-description">ConvLSTM neural network forecasting S&P 500 implied volatility surfaces 30 days ahead, achieving 23% lower MSE than GARCH baseline. Implements spatial-temporal modeling of the vol surface across strike and maturity dimensions with custom loss functions for no-arbitrage constraints.</p>
+        <p class="item-description">ConvLSTM neural network forecasting S&P 500 implied volatility surfaces 30 days ahead, achieving 23% lower MSE than GARCH baseline. Implements spatial-temporal modeling of the vol surface across strike and maturity.</p>
     </div>
     
     <div class="project-item">
         <div class="item-title">Deep Learning for Intraday Volatility Prediction</div>
-        <p class="item-description">Training GRU + HAR + GARCH-residual hybrid models on SPY/QQQ realized variance, order book imbalance, and higher moments (skewness, kurtosis) to predict intraday volatility. Combines econometric volatility decomposition with deep learning for improved forecasting accuracy.</p>
+        <p class="item-description">Training GRU + HAR + GARCH-models on SPY/QQQ realized variance, order book imbalance, and higher moments (skewness, kurtosis) to predict intraday volatility.</p>
     </div>
     
     
