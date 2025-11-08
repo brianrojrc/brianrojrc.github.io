@@ -48,7 +48,7 @@ title: Home
     
     
     <div class="project-item">
-        <div class="item-title">ML-Enhanced Hierarchical Risk Parity</div>
+        <div class="item-title">ML Enhanced Hierarchical Risk Parity</div>
         <p class="item-description">Portfolio construction using hierarchical risk parity with forecasted covariance matrices.</p>
     </div>
    
