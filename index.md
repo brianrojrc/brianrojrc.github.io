@@ -7,8 +7,6 @@ title: Home
     <h1 class="name">Brian Rojas</h1>
 </header>
 
-<section id="about">
-    <h2>About</h2>
     <p>I grew up in South Florida and currently study electrical engineering & cs + math at ucf. Reach me at brianroj (at) pm (dot) me.</p>
 
 </section>
