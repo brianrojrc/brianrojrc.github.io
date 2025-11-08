@@ -57,7 +57,7 @@ title: Home
             <div class="item-date">Aug 2025 – Oct 2025</div>
         </div>
         <div class="item-subtitle">NASA SUITS</div>
-        <p class="item-description">Architected a local offline AI assistant for EVA spacesuits on lunar missions using BitNet 1.58-bit quantized models and Model Context Protocol, with a multiagent system with Microsoft Speech SDK integration, featuring management, mission planning, telemetry monitoring, and procedural guidance agents that enable astronauts to query oxygen levels and repair procedures without ground communications. Tested in simulated HIVE environment.</p>
+        <p class="item-description">Architected a local offline AI assistant for EVA spacesuits on lunar missions using BitNet 1.58-bit quantized models and Model Context Protocol, with a multiagent system with Microsoft Speech SDK integration, Tested in a simulated HIVE environment.</p>
     </div>
 </section>
 
