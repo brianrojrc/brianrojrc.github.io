@@ -173,7 +173,7 @@ nav .nav-container {
 .container {
     max-width: 700px;
     margin: 0 auto;
-    padding: 100px 40px 80px;
+    padding: 120px 40px 80px;
     position: relative;
     z-index: 1;
 }
@@ -181,6 +181,7 @@ nav .nav-container {
 /* Header */
 header {
     margin-bottom: 80px;
+    margin-top: 20px;
     animation: fadeInUp 0.8s ease-out;
 }
 
@@ -442,6 +443,7 @@ strong {
 /* Page Header */
 .page-header {
     margin-bottom: 64px;
+    margin-top: 40px;
 }
 
 .page-header h1 {
@@ -755,7 +757,7 @@ strong {
     }
 
     .container {
-        padding: 80px 24px 60px;
+        padding: 100px 24px 60px;
     }
 
     h1.name {
@@ -764,6 +766,10 @@ strong {
 
     header {
         margin-bottom: 60px;
+    }
+    
+    .page-header {
+        margin-top: 30px;
     }
 
     section {
