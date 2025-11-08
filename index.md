@@ -8,7 +8,7 @@ title: Home
 </header>
 
 <section id="about">
-    <p>I grew up in South Florida and currently study electrical engineering & cs + math at ucf. Reach me at brianroj (at) pm (dot) me.</p>
+    <p>I'm from south florida and currently study electrical engineering & cs + math at ucf. Reach me at brianroj [at] pm [dot] me.</p>
 </section>
 
 <section id="experience">
