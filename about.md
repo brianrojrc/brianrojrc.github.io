@@ -5,7 +5,7 @@ title: About
 
 <header class="page-header">
     <h1>About Me</h1>
-    <p class="intro">College student & machine learning engineer</p>
+    <p class="intro">undergrad student & engineer</p>
 </header>
 
 <section class="about-content">
