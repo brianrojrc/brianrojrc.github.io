@@ -8,7 +8,7 @@ title: Home
 </header>
 
 <section id="about">
-    <p>I'm from south florida and currently study electrical engineering & cs + math at ucf. Reach me at brianroj [at] pm [dot] me.</p>
+    <p>I'm from florida and I currently study electrical engineering & cs + math at ucf. Reach me at brianroj [at] pm [dot] me.</p>
 </section>
 
 <section id="experience">
@@ -20,7 +20,7 @@ title: Home
             <div class="item-date">Sept 2025 — Present</div>
         </div>
         <div class="item-subtitle">University of Central Florida</div>
-        <p class="item-description">Building graph neural network transformers pretrained on order book data and 1M+ contact graphs..</p>
+        <p class="item-description">Building graph neural network transformers pretrained on order book data and 1M+ contact graphs.</p>
     </div>
     
     <div class="work-item">
