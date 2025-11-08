@@ -11,7 +11,7 @@ title: Home
 <section id="about">
     <h2>About</h2>
     <p>I'm an Electrical Engineering & CS + Math student at <a href="https://www.ucf.edu/" target="_blank" style="color: var(--accent-color); font-weight: 600;">UCF</a> with an interest in machine learning, quantitative finance, and robotics. I'm particularly drawn to intersection of physics and financial markets.</p>
-    <p>Outside academics, I explore iOS security research, nutrition, and philosophy. I currently work as an ML undergraduate researcher at UCF, prev at NASA as a ML Engineer</p>
+    <p>Outside academics, I explore iOS security research, nutrition, and philosophy. I currently work as an ML undergraduate researcher at UCF, prev @ NASA as a ML Engineer</p>
 </section>
 
 <section id="projects">
