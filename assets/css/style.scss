@@ -20,6 +20,8 @@ html {
     --accent-color: #0066cc;
     --accent-hover: #0052a3;
     --border-color: #f0f0f0;
+    --code-bg: #f6f8fa;
+    --code-border: #d0d7de;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,6 +33,8 @@ html {
         --accent-color: #3399ff;
         --accent-hover: #66b3ff;
         --border-color: #1f1f1f;
+        --code-bg: #0d1117;
+        --code-border: #30363d;
     }
 }
 
@@ -892,6 +896,7 @@ strong {
     line-height: 1.7;
     color: var(--text-secondary);
 }
+
 .post-page .post-title,
 .post-content h1:first-child {
   font-size: 32px;
@@ -951,18 +956,187 @@ strong {
   margin-top: 24px;
 }
 
+/* GitHub Dark Theme for Code Blocks */
 .post-content pre {
-  background: color-mix(in srgb, var(--border-color) 55%, transparent);
-  border: 1px solid var(--border-color);
+  background: var(--code-bg);
+  border: 1px solid var(--code-border);
   border-radius: 8px;
   padding: 16px 18px;
   overflow: auto;
+  line-height: 1.45;
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', 'Fira Mono', 'Roboto Mono', 'Consolas', monospace;
+  font-size: 14px;
 }
 
 .post-content code {
   background: color-mix(in srgb, var(--border-color) 35%, transparent);
   padding: 2px 6px;
   border-radius: 4px;
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', 'Fira Mono', 'Roboto Mono', 'Consolas', monospace;
+  font-size: 14px;
+}
+
+.post-content pre code {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  font-size: 14px;
+}
+
+/* GitHub Dark Syntax Highlighting */
+@media (prefers-color-scheme: dark) {
+  .post-content pre,
+  .post-content pre code {
+    color: #c9d1d9;
+  }
+  
+  /* Comments */
+  .post-content .highlight .c,
+  .post-content .highlight .cm,
+  .post-content .highlight .c1 {
+    color: #8b949e;
+    font-style: italic;
+  }
+  
+  /* Keywords */
+  .post-content .highlight .k,
+  .post-content .highlight .kc,
+  .post-content .highlight .kd,
+  .post-content .highlight .kn,
+  .post-content .highlight .kp,
+  .post-content .highlight .kr,
+  .post-content .highlight .kt {
+    color: #ff7b72;
+  }
+  
+  /* Strings */
+  .post-content .highlight .s,
+  .post-content .highlight .s1,
+  .post-content .highlight .s2,
+  .post-content .highlight .sb,
+  .post-content .highlight .sc,
+  .post-content .highlight .sd {
+    color: #a5d6ff;
+  }
+  
+  /* Numbers */
+  .post-content .highlight .m,
+  .post-content .highlight .mf,
+  .post-content .highlight .mh,
+  .post-content .highlight .mi,
+  .post-content .highlight .mo {
+    color: #79c0ff;
+  }
+  
+  /* Function names */
+  .post-content .highlight .nf,
+  .post-content .highlight .fm {
+    color: #d2a8ff;
+  }
+  
+  /* Class names */
+  .post-content .highlight .nc,
+  .post-content .highlight .nn {
+    color: #f0883e;
+  }
+  
+  /* Variables */
+  .post-content .highlight .n,
+  .post-content .highlight .na,
+  .post-content .highlight .nb,
+  .post-content .highlight .no,
+  .post-content .highlight .nv {
+    color: #c9d1d9;
+  }
+  
+  /* Operators */
+  .post-content .highlight .o,
+  .post-content .highlight .ow {
+    color: #ff7b72;
+  }
+  
+  /* Built-ins */
+  .post-content .highlight .nb {
+    color: #79c0ff;
+  }
+  
+  /* Punctuation */
+  .post-content .highlight .p {
+    color: #c9d1d9;
+  }
+}
+
+/* Light mode syntax highlighting */
+@media (prefers-color-scheme: light) {
+  .post-content pre,
+  .post-content pre code {
+    color: #24292f;
+  }
+  
+  .post-content .highlight .c,
+  .post-content .highlight .cm,
+  .post-content .highlight .c1 {
+    color: #6e7781;
+    font-style: italic;
+  }
+  
+  .post-content .highlight .k,
+  .post-content .highlight .kc,
+  .post-content .highlight .kd,
+  .post-content .highlight .kn,
+  .post-content .highlight .kp,
+  .post-content .highlight .kr,
+  .post-content .highlight .kt {
+    color: #cf222e;
+  }
+  
+  .post-content .highlight .s,
+  .post-content .highlight .s1,
+  .post-content .highlight .s2,
+  .post-content .highlight .sb,
+  .post-content .highlight .sc,
+  .post-content .highlight .sd {
+    color: #0a3069;
+  }
+  
+  .post-content .highlight .m,
+  .post-content .highlight .mf,
+  .post-content .highlight .mh,
+  .post-content .highlight .mi,
+  .post-content .highlight .mo {
+    color: #0550ae;
+  }
+  
+  .post-content .highlight .nf,
+  .post-content .highlight .fm {
+    color: #8250df;
+  }
+  
+  .post-content .highlight .nc,
+  .post-content .highlight .nn {
+    color: #953800;
+  }
+  
+  .post-content .highlight .n,
+  .post-content .highlight .na,
+  .post-content .highlight .nb,
+  .post-content .highlight .no,
+  .post-content .highlight .nv {
+    color: #24292f;
+  }
+  
+  .post-content .highlight .o,
+  .post-content .highlight .ow {
+    color: #cf222e;
+  }
+  
+  .post-content .highlight .nb {
+    color: #0550ae;
+  }
+  
+  .post-content .highlight .p {
+    color: #24292f;
+  }
 }
 
 .post-content table {
@@ -998,5 +1172,14 @@ strong {
   }
   .post-content h2 {
     font-size: 22px;
+  }
+  
+  .post-content pre {
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+  
+  .post-content code {
+    font-size: 13px;
   }
 }
