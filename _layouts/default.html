@@ -23,11 +23,60 @@
         {{ content }}
         
         <footer>
-            <p>© 2025 Brian Rojas.</p>
+            <p>Copyright © 2025 Brian Rojas. All rights reserved.</p>
         </footer>
     </main>
 
     <script>
+        // Typing animation
+        const phrases = [
+            "¡Hola Mundo! I'm Brian",
+            "Hello World! I'm Brian",
+            "你好世界! I'm Brian"
+        ];
+        
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typingSpeed = 100;
+        
+        function type() {
+            const typingTitle = document.getElementById('typingTitle');
+            if (!typingTitle) return;
+            
+            const currentPhrase = phrases[phraseIndex];
+            
+            if (!isDeleting) {
+                // Typing forward
+                typingTitle.innerHTML = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
+                typingSpeed = 100;
+                
+                if (charIndex === currentPhrase.length) {
+                    isDeleting = true;
+                    typingSpeed = 2000; // Pause at end
+                }
+            } else {
+                // Deleting backward
+                typingTitle.innerHTML = currentPhrase.substring(0, charIndex - 1);
+                charIndex--;
+                typingSpeed = 50;
+                
+                if (charIndex === 0) {
+                    isDeleting = false;
+                    phraseIndex = (phraseIndex + 1) % phrases.length;
+                    typingSpeed = 500; // Pause before typing next phrase
+                }
+            }
+            
+            setTimeout(type, typingSpeed);
+        }
+        
+        // Start typing animation when page loads
+        window.addEventListener('DOMContentLoaded', function() {
+            setTimeout(type, 500);
+        });
+        
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
