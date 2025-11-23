@@ -8,7 +8,7 @@ title: Home
 </header>
 
 <section id="about">
-    <p>I'm from South Florida, I'm a Junior @<a href="https://www.ece.ucf.edu/" target="_blank">UCF</a> studying EECS + Math.</p>
+    <p>I'm from South Florida, I'm a Junior @<a href="https://www.ece.ucf.edu/" target="_blank">UCF</a> studying Electrical Engineering & CS + Math.</p>
     
     <p>I'm passionate about the intersection of machine learning and quantitative finance. I'm interested in physics, deep learning, and robotics.</p>
     
@@ -27,6 +27,6 @@ title: Home
         <img src="https://img.icons8.com/?size=100&id=5UK0Mr3neT3r&format=png&color=000000" alt="ProtonMail"/>
     </a>
     <a href="https://www.linkedin.com/in/brian-rojascr" target="_blank" title="LinkedIn">
-        <img src="https://img.icons8.com/?size=100&id=60ZV_wYC0BM2&format=png&color=000000" alt="LinkedIn"/>
+        <img src="https://img.icons8.com/?size=100&id=67570&format=png&color=000000" alt="LinkedIn"/>
     </a>
 </section>
