@@ -24,7 +24,7 @@ title: Home
 
 <section id="social-icons">
     <a href="mailto:brianroj@pm.me" target="_blank" title="Email">
-        <img src="https://img.icons8.com/fluency/48/000000/protonmail.png" alt="ProtonMail"/>
+        <img src="https://img.icons8.com/?size=100&id=5UK0Mr3neT3r&format=png&color=000000" alt="ProtonMail"/>
     </a>
     <a href="https://www.linkedin.com/in/brian-rojascr" target="_blank" title="LinkedIn">
         <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn"/>
