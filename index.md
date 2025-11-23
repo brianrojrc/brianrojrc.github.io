@@ -8,7 +8,7 @@ title: Home
 </header>
 
 <section id="about">
-    <p>I'm from South Florida, I'm a Junior @<a href="https://www.ece.ucf.edu/" target="_blank">UCF</a> studying Electrical Engineering & CS + Math.</p>
+    <p>I'm from South Florida, I'm a Junior @ <a href="https://www.ece.ucf.edu/" target="_blank">UCF</a> studying Electrical Engineering & CS + Math.</p>
     
     <p>I'm passionate about the intersection of machine learning and quantitative finance. I'm interested in physics, deep learning, and robotics.</p>
     
