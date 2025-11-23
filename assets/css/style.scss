@@ -412,3 +412,178 @@ footer p {
     font-size: 15px;
     line-height: 1.6;
 }
+
+/* Blog post content styles */
+.post-content {
+    margin-top: 40px;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3 {
+    color: var(--text-primary);
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.post-content p {
+    margin-bottom: 16px;
+    line-height: 1.7;
+}
+
+.post-content ul,
+.post-content ol {
+    margin-bottom: 16px;
+    padding-left: 24px;
+}
+
+.post-content li {
+    margin-bottom: 8px;
+}
+
+/* GitHub Dark Theme for Code Blocks - ALWAYS DARK */
+.post-content pre {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 16px 18px;
+  overflow: auto;
+  line-height: 1.45;
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', 'Fira Mono', 'Roboto Mono', 'Consolas', monospace;
+  font-size: 14px;
+  color: #c9d1d9;
+}
+
+.post-content code {
+  background: rgba(110, 118, 129, 0.4);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', 'Fira Mono', 'Roboto Mono', 'Consolas', monospace;
+  font-size: 14px;
+}
+
+.post-content pre code {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  font-size: 14px;
+  color: #c9d1d9;
+}
+
+/* GitHub Dark Syntax Highlighting - ALWAYS DARK */
+/* Comments */
+.post-content .highlight .c,
+.post-content .highlight .cm,
+.post-content .highlight .c1 {
+  color: #8b949e;
+  font-style: italic;
+}
+
+/* Keywords */
+.post-content .highlight .k,
+.post-content .highlight .kc,
+.post-content .highlight .kd,
+.post-content .highlight .kn,
+.post-content .highlight .kp,
+.post-content .highlight .kr,
+.post-content .highlight .kt {
+  color: #ff7b72;
+}
+
+/* Strings */
+.post-content .highlight .s,
+.post-content .highlight .s1,
+.post-content .highlight .s2,
+.post-content .highlight .sb,
+.post-content .highlight .sc,
+.post-content .highlight .sd {
+  color: #a5d6ff;
+}
+
+/* Numbers */
+.post-content .highlight .m,
+.post-content .highlight .mf,
+.post-content .highlight .mh,
+.post-content .highlight .mi,
+.post-content .highlight .mo {
+  color: #79c0ff;
+}
+
+/* Function names */
+.post-content .highlight .nf,
+.post-content .highlight .fm {
+  color: #d2a8ff;
+}
+
+/* Class names */
+.post-content .highlight .nc,
+.post-content .highlight .nn {
+  color: #f0883e;
+}
+
+/* Variables */
+.post-content .highlight .n,
+.post-content .highlight .na,
+.post-content .highlight .nb,
+.post-content .highlight .no,
+.post-content .highlight .nv {
+  color: #c9d1d9;
+}
+
+/* Operators */
+.post-content .highlight .o,
+.post-content .highlight .ow {
+  color: #ff7b72;
+}
+
+/* Built-ins */
+.post-content .highlight .nb {
+  color: #79c0ff;
+}
+
+/* Punctuation */
+.post-content .highlight .p {
+  color: #c9d1d9;
+}
+
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0 24px;
+  font-size: 15px;
+}
+
+.post-content th,
+.post-content td {
+  border: 1px solid var(--border-color);
+  padding: 10px 12px;
+}
+
+.post-content th {
+  text-align: left;
+  color: var(--text-primary);
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  display: block;
+  margin: 16px auto;
+}
+
+@media (max-width: 768px) {
+  .post-content h2 {
+    font-size: 22px;
+  }
+  
+  .post-content pre {
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+  
+  .post-content code {
+    font-size: 13px;
+  }
+}
