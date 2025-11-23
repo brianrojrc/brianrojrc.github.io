@@ -29,7 +29,4 @@ title: Home
     <a href="https://www.linkedin.com/in/brian-rojascr" target="_blank" title="LinkedIn">
         <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn"/>
     </a>
-    <a href="https://github.com/brianrojcr" target="_blank" title="GitHub">
-        <img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub"/>
-    </a>
 </section>
