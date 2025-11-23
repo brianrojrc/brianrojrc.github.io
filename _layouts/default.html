@@ -5,40 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} - Brian Rojas{% else %}Brian Rojas{% endif %}</title>
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  
-    <div class="bg-decoration">
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-    </div>
-
     <nav>
         <div class="nav-container">
             <a href="{{ '/' | relative_url }}" class="nav-brand">Brian Rojas</a>
             <ul class="nav-links">
                 <li><a href="{{ '/' | relative_url }}" {% if page.url == "/" %}class="active"{% endif %}>Home</a></li>
-                <li><a href="{{ '/about' | relative_url }}" {% if page.url contains 'about' %}class="active"{% endif %}>About</a></li>
                 <li><a href="{{ '/projects' | relative_url }}" {% if page.url contains 'projects' %}class="active"{% endif %}>Projects</a></li>
                 <li><a href="{{ '/blog' | relative_url }}" {% if page.url contains 'blog' or page.url contains 'posts' %}class="active"{% endif %}>Blog</a></li>
-                <li><a href="{{ '/contact' | relative_url }}" {% if page.url contains 'contact' %}class="active"{% endif %}>Contact</a></li>
             </ul>
         </div>
     </nav>
 
-   
     <main class="container">
         {{ content }}
         
-        <footer style="padding-top: 60px; border-top: 1px solid var(--border-color); margin-top: 80px;">
-            <p style="font-size: 14px; color: var(--text-tertiary);">© 2025 Brian Rojas. hosted on GitHub Pages.</p>
+        <footer>
+            <p>© 2025 Brian Rojas.</p>
         </footer>
     </main>
 
-    
     <script>
-    
+        // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
