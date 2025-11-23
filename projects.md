@@ -20,7 +20,7 @@ title: Projects
     <h2 class="section-title">Previously.</h2>
     
     <ul class="project-list">
-        <li><strong><a href="#">Low-Latency Trading Systems</a></strong>: high-performance trading infrastructure in Rust and C++ for real-time market data processing with sub-microsecond latency</li>
+        <li><strong><a href="#">Low-Latency Trading Systems</a></strong>: high performance trading infrastructure in Rust and C++ for real-time market data processing with sub microsecond latency</li>
         <li><strong><a href="#">Graph Neural Networks for Order Books</a></strong>: building GNN transformers pretrained on 1M+ contact graphs for financial market prediction</li>
         <li><strong><a href="#">iOS Security Research</a></strong>: developing Pointer Authentication Code bypass techniques for iOS jailbreak development and kernel exploitation</li>
     </ul>
