@@ -27,6 +27,6 @@ title: Home
         <img src="https://img.icons8.com/?size=100&id=5UK0Mr3neT3r&format=png&color=000000" alt="ProtonMail"/>
     </a>
     <a href="https://www.linkedin.com/in/brian-rojascr" target="_blank" title="LinkedIn">
-        <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn"/>
+        <img src="https://img.icons8.com/?size=100&id=60ZV_wYC0BM2&format=png&color=000000" alt="LinkedIn"/>
     </a>
 </section>
