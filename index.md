@@ -15,13 +15,6 @@ title: Home
     <p>Reach out to me brianroj [at] pm [dot] me.</p>
 </section>
 
-<section id="quick-links">
-    <p>Programming Languages:</p>
-    <ul style="list-style: none; padding-left: 0; margin-top: 8px;">
-        <li>• Python, Rust, C/C++, Assembly</li>
-    </ul>
-</section>
-
 <section id="social-icons">
     <a href="mailto:brianroj@pm.me" target="_blank" title="Email">
         <img src="https://img.icons8.com/?size=100&id=5UK0Mr3neT3r&format=png&color=000000" alt="ProtonMail"/>
