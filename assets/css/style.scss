@@ -99,11 +99,26 @@ header {
     margin-bottom: 60px;
 }
 
-h1.name {
-    font-size: 28px;
+h1.name,
+.typing-title {
+    font-size: 32px;
     font-weight: bold;
-    color: var(--text-primary);
+    color: var(--accent-color);
     margin-bottom: 20px;
+}
+
+.typing-title::after {
+    content: '|';
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
 }
 
 /* Sections */
@@ -150,6 +165,29 @@ ul {
     color: var(--text-secondary);
 }
 
+/* Social Icons */
+#social-icons {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+#social-icons a {
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    display: inline-block;
+}
+
+#social-icons a:hover {
+    transform: translateY(-3px);
+    opacity: 0.8;
+}
+
+#social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
 /* Footer */
 footer {
     padding-top: 60px;
@@ -160,6 +198,7 @@ footer {
 footer p {
     font-size: 14px;
     color: var(--text-tertiary);
+    text-align: center;
 }
 
 /* Projects Page Styles */
