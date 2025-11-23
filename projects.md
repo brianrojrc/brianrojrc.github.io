@@ -4,58 +4,24 @@ title: Projects
 ---
 
 <header class="page-header">
-    <span class="page-marker">[1]</span>
     <h1>Projects</h1>
-    <p class="intro">A collection of my work.</p>
 </header>
 
-<section class="projects">
-    <span class="section-marker">[2]</span>
-    <h2>Work</h2>
+<section class="projects-simple">
+    <h2 class="section-title">Currently.</h2>
     
-    <div class="project-item-detailed">
-        <div class="project-header">
-            <div class="project-number">1</div>
-            <div class="project-content">
-                <h3 class="project-title-large">iOS PAC Bypass Research</h3>
-                <p class="project-description">Developing Pointer Authentication Code bypass techniques for iOS jailbreak development, focusing on kernel exploitation and modern iOS security mechanisms.</p>
-                <div class="project-tags">
-                    <span class="tag">Security Research</span>
-                    <span class="tag">iOS</span>
-                    <span class="tag">Kernel Exploitation</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="project-item-detailed">
-        <div class="project-header">
-            <div class="project-number">2</div>
-            <div class="project-content">
-                <h3 class="project-title-large">Volatility Forecasting</h3>
-                <p class="project-description">Machine learning system for forecasting volatility surfaces and trading vol in options markets. Deep analysis of orderbook microstructure dynamics.</p>
-                <div class="project-tags">
-                    <span class="tag">Machine Learning</span>
-                    <span class="tag">Python</span>
-                    <span class="tag">TensorFlow</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="project-item-detailed">
-        <div class="project-header">
-            <div class="project-number">3</div>
-            <div class="project-content">
-                <h3 class="project-title-large">Low-Latency Trading Systems</h3>
-                <p class="project-description">High-performance trading infrastructure built in Rust and C++ for real-time market data processing and order execution.</p>
-                <div class="project-tags">
-                    <span class="tag">Rust</span>
-                    <span class="tag">C++</span>
-                    <span class="tag">Systems Programming</span>
-                </div>
-            </div>
-        </div>
-    </div>
+    <ul class="project-list">
+        <li><strong><a href="#">Volatility Surface Forecasting</a></strong>: ConvLSTM neural network forecasting S&P 500 implied volatility surfaces 30 days ahead, achieving 23% lower MSE than GARCH baseline</li>
+        <li><strong><a href="#">Deep Learning for Intraday Volatility</a></strong>: training GRU + HAR + GARCH models on SPY/QQQ realized variance and order book imbalance to predict intraday volatility</li>
+        <li><strong><a href="#">ML Enhanced Risk Parity</a></strong>: portfolio construction using hierarchical risk parity with machine learning forecasted covariance matrices</li>
+        <li><strong><a href="#">NASA SUITS</a></strong>: architecting local offline AI assistant for EVA spacesuits using BitNet 1.58-bit quantized models with multiagent system</li>
+    </ul>
+    
+    <h2 class="section-title">Previously.</h2>
+    
+    <ul class="project-list">
+        <li><strong><a href="#">Low-Latency Trading Systems</a></strong>: high-performance trading infrastructure in Rust and C++ for real-time market data processing with sub-microsecond latency</li>
+        <li><strong><a href="#">Graph Neural Networks for Order Books</a></strong>: building GNN transformers pretrained on 1M+ contact graphs for financial market prediction</li>
+        <li><strong><a href="#">iOS Security Research</a></strong>: developing Pointer Authentication Code bypass techniques for iOS jailbreak development and kernel exploitation</li>
+    </ul>
 </section>
-           
